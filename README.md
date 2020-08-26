@@ -58,6 +58,20 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 
 # Enter a context with an instance of the API client
@@ -128,7 +142,13 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- All endpoints do not require authorization.
+
+## api_key
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
 
 ## Author
 

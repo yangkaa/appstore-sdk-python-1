@@ -22,6 +22,7 @@ create an app model
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -34,9 +35,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     body = openapi_client.V1AppCreateRequest() # V1AppCreateRequest | 
@@ -63,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -88,6 +103,7 @@ post an app version
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -100,9 +116,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -131,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -155,6 +185,7 @@ get app image save info
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -167,9 +198,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -196,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -220,6 +265,7 @@ get mrket info
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -232,9 +278,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     market_domain = 'market_domain_example' # str | the market domain (optional)
@@ -259,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -282,6 +342,7 @@ Query the specified application details
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -294,9 +355,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -323,7 +398,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -347,6 +422,7 @@ A list of installable applications
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -359,9 +435,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     market_domain = 'market_domain_example' # str | the market domain
@@ -394,7 +484,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -417,6 +507,7 @@ Query the specified version details of the specified application
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -429,9 +520,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -464,7 +569,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -488,6 +593,7 @@ Query the specified application version list
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -500,9 +606,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -531,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -555,6 +675,7 @@ update app model base info
 
 ### Example
 
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
@@ -567,9 +688,23 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
@@ -598,7 +733,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 

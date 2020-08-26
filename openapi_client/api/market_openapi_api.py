@@ -158,7 +158,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps', 'POST',
@@ -309,7 +309,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions', 'POST',
@@ -445,7 +445,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/apphubinfo', 'GET',
@@ -570,7 +570,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/info', 'GET',
@@ -710,7 +710,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}', 'GET',
@@ -867,7 +867,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps', 'GET',
@@ -1028,7 +1028,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions/{version}', 'GET',
@@ -1179,7 +1179,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions', 'GET',
@@ -1330,7 +1330,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}', 'PUT',

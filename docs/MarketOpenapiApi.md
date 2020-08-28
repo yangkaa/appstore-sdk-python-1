@@ -54,7 +54,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
-    body = openapi_client.V1AppCreateRequest() # V1AppCreateRequest | 
+    body = openapi_client.V1AppModelCreateRequest() # V1AppModelCreateRequest | 
 market_domain = 'market_domain_example' # str | the market domain (optional)
 
     try:
@@ -69,7 +69,7 @@ market_domain = 'market_domain_example' # str | the market domain (optional)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**V1AppCreateRequest**](V1AppCreateRequest.md)|  | 
+ **body** | [**V1AppModelCreateRequest**](V1AppModelCreateRequest.md)|  | 
  **market_domain** | **str**| the market domain | [optional] 
 
 ### Return type

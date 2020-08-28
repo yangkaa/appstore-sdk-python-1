@@ -18,9 +18,9 @@ from __future__ import absolute_import
 from openapi_client.models.controller_result import ControllerResult
 from openapi_client.models.restfulutil_result import RestfulutilResult
 from openapi_client.models.v1_app_base_info import V1AppBaseInfo
-from openapi_client.models.v1_app_create_request import V1AppCreateRequest
 from openapi_client.models.v1_app_detail_info_response import V1AppDetailInfoResponse
 from openapi_client.models.v1_app_image_hub_info_response import V1AppImageHubInfoResponse
+from openapi_client.models.v1_app_model_create_request import V1AppModelCreateRequest
 from openapi_client.models.v1_app_update_request import V1AppUpdateRequest
 from openapi_client.models.v1_app_version_base import V1AppVersionBase
 from openapi_client.models.v1_app_version_detail_response import V1AppVersionDetailResponse

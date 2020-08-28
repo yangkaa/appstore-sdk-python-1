@@ -47,7 +47,7 @@ class MarketOpenapiApi(object):
         >>> result = thread.get()
 
         :param body: (required)
-        :type body: V1AppCreateRequest
+        :type body: V1AppModelCreateRequest
         :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
@@ -78,7 +78,7 @@ class MarketOpenapiApi(object):
         >>> result = thread.get()
 
         :param body: (required)
-        :type body: V1AppCreateRequest
+        :type body: V1AppModelCreateRequest
         :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.

@@ -78,7 +78,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
-    body = openapi_client.V1AppCreateRequest() # V1AppCreateRequest | 
+    body = openapi_client.V1AppModelCreateRequest() # V1AppModelCreateRequest | 
 market_domain = 'market_domain_example' # str | the market domain (optional)
 
     try:
@@ -113,9 +113,9 @@ Class | Method | HTTP request | Description
  - [ControllerResult](docs/ControllerResult.md)
  - [RestfulutilResult](docs/RestfulutilResult.md)
  - [V1AppBaseInfo](docs/V1AppBaseInfo.md)
- - [V1AppCreateRequest](docs/V1AppCreateRequest.md)
  - [V1AppDetailInfoResponse](docs/V1AppDetailInfoResponse.md)
  - [V1AppImageHubInfoResponse](docs/V1AppImageHubInfoResponse.md)
+ - [V1AppModelCreateRequest](docs/V1AppModelCreateRequest.md)
  - [V1AppUpdateRequest](docs/V1AppUpdateRequest.md)
  - [V1AppVersionBase](docs/V1AppVersionBase.md)
  - [V1AppVersionDetailResponse](docs/V1AppVersionDetailResponse.md)

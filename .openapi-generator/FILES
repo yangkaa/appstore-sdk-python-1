@@ -7,9 +7,9 @@ docs/MarketOpenapiApi.md
 docs/RegistryApiApi.md
 docs/RestfulutilResult.md
 docs/V1AppBaseInfo.md
-docs/V1AppCreateRequest.md
 docs/V1AppDetailInfoResponse.md
 docs/V1AppImageHubInfoResponse.md
+docs/V1AppModelCreateRequest.md
 docs/V1AppUpdateRequest.md
 docs/V1AppVersionBase.md
 docs/V1AppVersionDetailResponse.md
@@ -44,9 +44,9 @@ openapi_client/models/__init__.py
 openapi_client/models/controller_result.py
 openapi_client/models/restfulutil_result.py
 openapi_client/models/v1_app_base_info.py
-openapi_client/models/v1_app_create_request.py
 openapi_client/models/v1_app_detail_info_response.py
 openapi_client/models/v1_app_image_hub_info_response.py
+openapi_client/models/v1_app_model_create_request.py
 openapi_client/models/v1_app_update_request.py
 openapi_client/models/v1_app_version_base.py
 openapi_client/models/v1_app_version_detail_response.py
@@ -75,4 +75,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_v1_app_model_create_request.py
 tox.ini

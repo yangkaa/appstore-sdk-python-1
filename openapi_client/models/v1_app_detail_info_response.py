@@ -52,6 +52,7 @@ class V1AppDetailInfoResponse(object):
         'name': 'str',
         'org_id': 'str',
         'publish_type': 'str',
+        'show_count': 'int',
         'start_count': 'int',
         'status': 'str',
         'tags': 'list[str]',
@@ -78,6 +79,7 @@ class V1AppDetailInfoResponse(object):
         'name': 'name',
         'org_id': 'orgID',
         'publish_type': 'publishType',
+        'show_count': 'showCount',
         'start_count': 'startCount',
         'status': 'status',
         'tags': 'tags',
@@ -85,7 +87,7 @@ class V1AppDetailInfoResponse(object):
         'versions': 'versions'
     }
 
-    def __init__(self, app_classification_id=None, app_detail_url=None, app_key_id=None, create_time=None, desc=None, dev_status=None, download_count=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, org_id=None, publish_type=None, start_count=None, status=None, tags=None, update_time=None, versions=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, app_classification_id=None, app_detail_url=None, app_key_id=None, create_time=None, desc=None, dev_status=None, download_count=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, org_id=None, publish_type=None, show_count=None, start_count=None, status=None, tags=None, update_time=None, versions=None, local_vars_configuration=None):  # noqa: E501
         """V1AppDetailInfoResponse - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -109,6 +111,7 @@ class V1AppDetailInfoResponse(object):
         self._name = None
         self._org_id = None
         self._publish_type = None
+        self._show_count = None
         self._start_count = None
         self._status = None
         self._tags = None
@@ -134,6 +137,7 @@ class V1AppDetailInfoResponse(object):
         self.name = name
         self.org_id = org_id
         self.publish_type = publish_type
+        self.show_count = show_count
         self.start_count = start_count
         self.status = status
         self.tags = tags
@@ -553,6 +557,29 @@ class V1AppDetailInfoResponse(object):
             raise ValueError("Invalid value for `publish_type`, must not be `None`")  # noqa: E501
 
         self._publish_type = publish_type
+
+    @property
+    def show_count(self):
+        """Gets the show_count of this V1AppDetailInfoResponse.  # noqa: E501
+
+
+        :return: The show_count of this V1AppDetailInfoResponse.  # noqa: E501
+        :rtype: int
+        """
+        return self._show_count
+
+    @show_count.setter
+    def show_count(self, show_count):
+        """Sets the show_count of this V1AppDetailInfoResponse.
+
+
+        :param show_count: The show_count of this V1AppDetailInfoResponse.  # noqa: E501
+        :type show_count: int
+        """
+        if self.local_vars_configuration.client_side_validation and show_count is None:  # noqa: E501
+            raise ValueError("Invalid value for `show_count`, must not be `None`")  # noqa: E501
+
+        self._show_count = show_count
 
     @property
     def start_count(self):

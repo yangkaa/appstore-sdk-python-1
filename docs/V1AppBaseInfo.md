@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **market_url** | **str** |  | 
 **name** | **str** |  | 
 **publish_type** | **str** |  | 
+**show_count** | **int** |  | 
 **start_count** | **int** |  | 
 **status** | **str** |  | 
 **tags** | **list[str]** |  | 

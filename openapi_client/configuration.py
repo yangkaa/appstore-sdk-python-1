@@ -327,16 +327,15 @@ conf = openapi_client.Configuration(
         self.__logger_format = value
         self.logger_formatter = logging.Formatter(self.__logger_format)
 
-    def get_api_key_with_prefix(self, identifier, alias=None):
+    def get_api_key_with_prefix(self, identifier):
         """Gets API key (with prefix if set).
 
         :param identifier: The identifier of apiKey.
-        :param alias: The alternative identifier of apiKey.
         :return: The token for api key authentication.
         """
         if self.refresh_api_key_hook is not None:
             self.refresh_api_key_hook(self)
-        key = self.api_key.get(identifier, self.api_key.get(alias) if alias is not None else None)
+        key = self.api_key.get(identifier)
         if key:
             prefix = self.api_key_prefix.get(identifier)
             if prefix:
@@ -365,14 +364,12 @@ conf = openapi_client.Configuration(
         :return: The Auth Settings information dict.
         """
         auth = {}
-        if 'api_key' in self.api_key:
+        if 'Authorization' in self.api_key:
             auth['api_key'] = {
                 'type': 'api_key',
                 'in': 'header',
                 'key': 'Authorization',
-                'value': self.get_api_key_with_prefix(
-                    'api_key',
-                ),
+                'value': self.get_api_key_with_prefix('Authorization')
             }
         return auth
 

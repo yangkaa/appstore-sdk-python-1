@@ -35,17 +35,15 @@ class RestfulutilResult(object):
     """
     openapi_types = {
         'code': 'int',
-        'msg': 'str',
-        'status': 'int'
+        'msg': 'str'
     }
 
     attribute_map = {
         'code': 'code',
-        'msg': 'msg',
-        'status': 'status'
+        'msg': 'msg'
     }
 
-    def __init__(self, code=None, msg=None, status=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, code=None, msg=None, local_vars_configuration=None):  # noqa: E501
         """RestfulutilResult - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -53,12 +51,10 @@ class RestfulutilResult(object):
 
         self._code = None
         self._msg = None
-        self._status = None
         self.discriminator = None
 
         self.code = code
         self.msg = msg
-        self.status = status
 
     @property
     def code(self):
@@ -105,29 +101,6 @@ class RestfulutilResult(object):
             raise ValueError("Invalid value for `msg`, must not be `None`")  # noqa: E501
 
         self._msg = msg
-
-    @property
-    def status(self):
-        """Gets the status of this RestfulutilResult.  # noqa: E501
-
-
-        :return: The status of this RestfulutilResult.  # noqa: E501
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this RestfulutilResult.
-
-
-        :param status: The status of this RestfulutilResult.  # noqa: E501
-        :type status: int
-        """
-        if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
-            raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
-
-        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

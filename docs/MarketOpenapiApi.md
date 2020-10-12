@@ -4,6 +4,7 @@ All URIs are relative to *http://127.0.0.1:8080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**bindable_markets**](MarketOpenapiApi.md#bindable_markets) | **GET** /app-server/openapi/bindablemarkets | 可绑定的商店列表
 [**create_app**](MarketOpenapiApi.md#create_app) | **POST** /app-server/openapi/apps | create an app model
 [**create_app_version**](MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | post an app version
 [**get_app_hub_info**](MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | get app image save info
@@ -14,6 +15,78 @@ Method | HTTP request | Description
 [**get_user_app_versions**](MarketOpenapiApi.md#get_user_app_versions) | **GET** /app-server/openapi/apps/{appID}/versions | Query the specified application version list
 [**update_app**](MarketOpenapiApi.md#update_app) | **PUT** /app-server/openapi/apps/{appID} | update app model base info
 
+
+# **bindable_markets**
+> list[V1BindableMarket] bindable_markets()
+
+可绑定的商店列表
+
+### Example
+
+* Api Key Authentication (api_key):
+```python
+from __future__ import print_function
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://127.0.0.1:8080
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'Authorization': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.MarketOpenapiApi(api_client)
+    
+    try:
+        # 可绑定的商店列表
+        api_response = api_instance.bindable_markets()
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling MarketOpenapiApi->bindable_markets: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**list[V1BindableMarket]**](V1BindableMarket.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**403** | No perm |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_app**
 > V1AppDetailInfoResponse create_app(body, market_domain=market_domain)
@@ -44,17 +117,17 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
-    body = openapi_client.V1AppCreateRequest() # V1AppCreateRequest | 
+    body = openapi_client.V1AppModelCreateRequest() # V1AppModelCreateRequest | 
 market_domain = 'market_domain_example' # str | the market domain (optional)
 
     try:
@@ -69,7 +142,7 @@ market_domain = 'market_domain_example' # str | the market domain (optional)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**V1AppCreateRequest**](V1AppCreateRequest.md)|  | 
+ **body** | [**V1AppModelCreateRequest**](V1AppModelCreateRequest.md)|  | 
  **market_domain** | **str**| the market domain | [optional] 
 
 ### Return type
@@ -125,11 +198,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
@@ -207,11 +280,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
@@ -287,11 +360,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
@@ -336,7 +409,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_app_detail**
-> V1AppDetailInfoResponse get_user_app_detail(app_id, market_domain=market_domain)
+> V1AppDetailInfoResponse get_user_app_detail(app_id, market_domain)
 
 Query the specified application details
 
@@ -364,22 +437,22 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
-market_domain = 'market_domain_example' # str | the market domain (optional)
+market_domain = 'market_domain_example' # str | the market domain
 
     try:
         # Query the specified application details
-        api_response = api_instance.get_user_app_detail(app_id, market_domain=market_domain)
+        api_response = api_instance.get_user_app_detail(app_id, market_domain)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling MarketOpenapiApi->get_user_app_detail: %s\n" % e)
@@ -390,7 +463,7 @@ market_domain = 'market_domain_example' # str | the market domain (optional)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **app_id** | **str**| The app ID | 
- **market_domain** | **str**| the market domain | [optional] 
+ **market_domain** | **str**| the market domain | 
 
 ### Return type
 
@@ -416,7 +489,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_app_list**
-> V1UserAppListResponse get_user_app_list(query=query, query_all=query_all, page=page, page_size=page_size, market_domain=market_domain)
+> V1UserAppListResponse get_user_app_list(market_domain, query=query, query_all=query_all, page=page, page_size=page_size)
 
 A list of installable applications
 
@@ -444,25 +517,25 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
-    query = 'query_example' # str | The search criteria (optional)
+    market_domain = 'market_domain_example' # str | the market domain
+query = 'query_example' # str | The search criteria (optional)
 query_all = True # bool | true (optional)
 page = 56 # int | query page num (optional)
 page_size = 56 # int | query page size, if -1 return all app (optional)
-market_domain = 'market_domain_example' # str | the market domain (optional)
 
     try:
         # A list of installable applications
-        api_response = api_instance.get_user_app_list(query=query, query_all=query_all, page=page, page_size=page_size, market_domain=market_domain)
+        api_response = api_instance.get_user_app_list(market_domain, query=query, query_all=query_all, page=page, page_size=page_size)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling MarketOpenapiApi->get_user_app_list: %s\n" % e)
@@ -472,11 +545,11 @@ market_domain = 'market_domain_example' # str | the market domain (optional)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **market_domain** | **str**| the market domain | 
  **query** | **str**| The search criteria | [optional] 
  **query_all** | **bool**| true | [optional] 
  **page** | **int**| query page num | [optional] 
  **page_size** | **int**| query page size, if -1 return all app | [optional] 
- **market_domain** | **str**| the market domain | [optional] 
 
 ### Return type
 
@@ -501,7 +574,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_app_version_detail**
-> V1AppVersionDetailResponse get_user_app_version_detail(app_id, version, market_domain=market_domain, for_install=for_install)
+> V1AppVersionDetailResponse get_user_app_version_detail(app_id, version, market_domain=market_domain, for_install=for_install, get_template=get_template)
 
 Query the specified version details of the specified application
 
@@ -529,11 +602,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
@@ -543,10 +616,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 version = 'version_example' # str | The app version
 market_domain = 'market_domain_example' # str | the market domain (optional)
 for_install = True # bool | Whether used for installation (optional)
+get_template = True # bool | Whether get templete (optional)
 
     try:
         # Query the specified version details of the specified application
-        api_response = api_instance.get_user_app_version_detail(app_id, version, market_domain=market_domain, for_install=for_install)
+        api_response = api_instance.get_user_app_version_detail(app_id, version, market_domain=market_domain, for_install=for_install, get_template=get_template)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling MarketOpenapiApi->get_user_app_version_detail: %s\n" % e)
@@ -560,6 +634,7 @@ Name | Type | Description  | Notes
  **version** | **str**| The app version | 
  **market_domain** | **str**| the market domain | [optional] 
  **for_install** | **bool**| Whether used for installation | [optional] 
+ **get_template** | **bool**| Whether get templete | [optional] 
 
 ### Return type
 
@@ -585,7 +660,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_app_versions**
-> V1AppVersionListResponse get_user_app_versions(app_id, query_all, market_domain=market_domain)
+> V1AppVersionListResponse get_user_app_versions(app_id, query_all, market_domain)
 
 Query the specified application version list
 
@@ -613,11 +688,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
@@ -625,11 +700,11 @@ with openapi_client.ApiClient(configuration) as api_client:
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     app_id = 'app_id_example' # str | The app ID
 query_all = True # bool | query all versions, must have write perm
-market_domain = 'market_domain_example' # str | the market domain (optional)
+market_domain = 'market_domain_example' # str | the market domain
 
     try:
         # Query the specified application version list
-        api_response = api_instance.get_user_app_versions(app_id, query_all, market_domain=market_domain)
+        api_response = api_instance.get_user_app_versions(app_id, query_all, market_domain)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling MarketOpenapiApi->get_user_app_versions: %s\n" % e)
@@ -641,7 +716,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **app_id** | **str**| The app ID | 
  **query_all** | **bool**| query all versions, must have write perm | 
- **market_domain** | **str**| the market domain | [optional] 
+ **market_domain** | **str**| the market domain | 
 
 ### Return type
 
@@ -695,11 +770,11 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:

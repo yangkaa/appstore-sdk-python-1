@@ -37,6 +37,124 @@ class MarketOpenapiApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def bindable_markets(self, **kwargs):  # noqa: E501
+        """可绑定的商店列表  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+
+        >>> thread = api.bindable_markets(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req: Whether to execute the request asynchronously.
+        :type async_req: bool, optional
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :type _preload_content: bool, optional
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: Returns the result object.
+                 If the method is called asynchronously,
+                 returns the request thread.
+        :rtype: list[V1BindableMarket]
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.bindable_markets_with_http_info(**kwargs)  # noqa: E501
+
+    def bindable_markets_with_http_info(self, **kwargs):  # noqa: E501
+        """可绑定的商店列表  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+
+        >>> thread = api.bindable_markets_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req: Whether to execute the request asynchronously.
+        :type async_req: bool, optional
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :type _return_http_data_only: bool, optional
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :type _preload_content: bool, optional
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :param _request_auth: set to override the auth_settings for an a single
+                              request; this effectively ignores the authentication
+                              in the spec for a single request.
+        :type _request_auth: dict, optional
+        :return: Returns the result object.
+                 If the method is called asynchronously,
+                 returns the request thread.
+        :rtype: tuple(list[V1BindableMarket], status_code(int), headers(HTTPHeaderDict))
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout',
+                '_request_auth'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method bindable_markets" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['api_key']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/app-server/openapi/bindablemarkets', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[V1BindableMarket]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats,
+            _request_auth=local_var_params.get('_request_auth'))
+
     def create_app(self, body, **kwargs):  # noqa: E501
         """create an app model  # noqa: E501
 
@@ -47,7 +165,7 @@ class MarketOpenapiApi(object):
         >>> result = thread.get()
 
         :param body: (required)
-        :type body: V1AppCreateRequest
+        :type body: V1AppModelCreateRequest
         :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
@@ -78,7 +196,7 @@ class MarketOpenapiApi(object):
         >>> result = thread.get()
 
         :param body: (required)
-        :type body: V1AppCreateRequest
+        :type body: V1AppModelCreateRequest
         :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
@@ -589,18 +707,18 @@ class MarketOpenapiApi(object):
             collection_formats=collection_formats,
             _request_auth=local_var_params.get('_request_auth'))
 
-    def get_user_app_detail(self, app_id, **kwargs):  # noqa: E501
+    def get_user_app_detail(self, app_id, market_domain, **kwargs):  # noqa: E501
         """Query the specified application details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_detail(app_id, async_req=True)
+        >>> thread = api.get_user_app_detail(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
         :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: the market domain
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -618,20 +736,20 @@ class MarketOpenapiApi(object):
         :rtype: V1AppDetailInfoResponse
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_user_app_detail_with_http_info(app_id, **kwargs)  # noqa: E501
+        return self.get_user_app_detail_with_http_info(app_id, market_domain, **kwargs)  # noqa: E501
 
-    def get_user_app_detail_with_http_info(self, app_id, **kwargs):  # noqa: E501
+    def get_user_app_detail_with_http_info(self, app_id, market_domain, **kwargs):  # noqa: E501
         """Query the specified application details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_detail_with_http_info(app_id, async_req=True)
+        >>> thread = api.get_user_app_detail_with_http_info(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
         :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: the market domain
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -684,6 +802,10 @@ class MarketOpenapiApi(object):
         if self.api_client.client_side_validation and ('app_id' not in local_var_params or  # noqa: E501
                                                         local_var_params['app_id'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `app_id` when calling `get_user_app_detail`")  # noqa: E501
+        # verify the required parameter 'market_domain' is set
+        if self.api_client.client_side_validation and ('market_domain' not in local_var_params or  # noqa: E501
+                                                        local_var_params['market_domain'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `market_domain` when calling `get_user_app_detail`")  # noqa: E501
 
         collection_formats = {}
 
@@ -725,15 +847,17 @@ class MarketOpenapiApi(object):
             collection_formats=collection_formats,
             _request_auth=local_var_params.get('_request_auth'))
 
-    def get_user_app_list(self, **kwargs):  # noqa: E501
+    def get_user_app_list(self, market_domain, **kwargs):  # noqa: E501
         """A list of installable applications  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_list(async_req=True)
+        >>> thread = api.get_user_app_list(market_domain, async_req=True)
         >>> result = thread.get()
 
+        :param market_domain: the market domain (required)
+        :type market_domain: str
         :param query: The search criteria
         :type query: str
         :param query_all: true
@@ -742,8 +866,6 @@ class MarketOpenapiApi(object):
         :type page: int
         :param page_size: query page size, if -1 return all app
         :type page_size: int
-        :param market_domain: the market domain
-        :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -760,17 +882,19 @@ class MarketOpenapiApi(object):
         :rtype: V1UserAppListResponse
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_user_app_list_with_http_info(**kwargs)  # noqa: E501
+        return self.get_user_app_list_with_http_info(market_domain, **kwargs)  # noqa: E501
 
-    def get_user_app_list_with_http_info(self, **kwargs):  # noqa: E501
+    def get_user_app_list_with_http_info(self, market_domain, **kwargs):  # noqa: E501
         """A list of installable applications  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_list_with_http_info(async_req=True)
+        >>> thread = api.get_user_app_list_with_http_info(market_domain, async_req=True)
         >>> result = thread.get()
 
+        :param market_domain: the market domain (required)
+        :type market_domain: str
         :param query: The search criteria
         :type query: str
         :param query_all: true
@@ -779,8 +903,6 @@ class MarketOpenapiApi(object):
         :type page: int
         :param page_size: query page size, if -1 return all app
         :type page_size: int
-        :param market_domain: the market domain
-        :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -807,11 +929,11 @@ class MarketOpenapiApi(object):
         local_var_params = locals()
 
         all_params = [
+            'market_domain',
             'query',
             'query_all',
             'page',
-            'page_size',
-            'market_domain'
+            'page_size'
         ]
         all_params.extend(
             [
@@ -831,6 +953,10 @@ class MarketOpenapiApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
+        # verify the required parameter 'market_domain' is set
+        if self.api_client.client_side_validation and ('market_domain' not in local_var_params or  # noqa: E501
+                                                        local_var_params['market_domain'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `market_domain` when calling `get_user_app_list`")  # noqa: E501
 
         collection_formats = {}
 
@@ -895,6 +1021,8 @@ class MarketOpenapiApi(object):
         :type market_domain: str
         :param for_install: Whether used for installation
         :type for_install: bool
+        :param get_template: Whether get templete
+        :type get_template: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -930,6 +1058,8 @@ class MarketOpenapiApi(object):
         :type market_domain: str
         :param for_install: Whether used for installation
         :type for_install: bool
+        :param get_template: Whether get templete
+        :type get_template: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -959,7 +1089,8 @@ class MarketOpenapiApi(object):
             'app_id',
             'version',
             'market_domain',
-            'for_install'
+            'for_install',
+            'get_template'
         ]
         all_params.extend(
             [
@@ -1001,6 +1132,8 @@ class MarketOpenapiApi(object):
             query_params.append(('marketDomain', local_var_params['market_domain']))  # noqa: E501
         if 'for_install' in local_var_params and local_var_params['for_install'] is not None:  # noqa: E501
             query_params.append(('forInstall', local_var_params['for_install']))  # noqa: E501
+        if 'get_template' in local_var_params and local_var_params['get_template'] is not None:  # noqa: E501
+            query_params.append(('getTemplate', local_var_params['get_template']))  # noqa: E501
 
         header_params = {}
 
@@ -1032,20 +1165,20 @@ class MarketOpenapiApi(object):
             collection_formats=collection_formats,
             _request_auth=local_var_params.get('_request_auth'))
 
-    def get_user_app_versions(self, app_id, query_all, **kwargs):  # noqa: E501
+    def get_user_app_versions(self, app_id, query_all, market_domain, **kwargs):  # noqa: E501
         """Query the specified application version list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_versions(app_id, query_all, async_req=True)
+        >>> thread = api.get_user_app_versions(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
         :param app_id: The app ID (required)
         :type app_id: str
         :param query_all: query all versions, must have write perm (required)
         :type query_all: bool
-        :param market_domain: the market domain
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1063,22 +1196,22 @@ class MarketOpenapiApi(object):
         :rtype: V1AppVersionListResponse
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_user_app_versions_with_http_info(app_id, query_all, **kwargs)  # noqa: E501
+        return self.get_user_app_versions_with_http_info(app_id, query_all, market_domain, **kwargs)  # noqa: E501
 
-    def get_user_app_versions_with_http_info(self, app_id, query_all, **kwargs):  # noqa: E501
+    def get_user_app_versions_with_http_info(self, app_id, query_all, market_domain, **kwargs):  # noqa: E501
         """Query the specified application version list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_user_app_versions_with_http_info(app_id, query_all, async_req=True)
+        >>> thread = api.get_user_app_versions_with_http_info(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
         :param app_id: The app ID (required)
         :type app_id: str
         :param query_all: query all versions, must have write perm (required)
         :type query_all: bool
-        :param market_domain: the market domain
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1136,6 +1269,10 @@ class MarketOpenapiApi(object):
         if self.api_client.client_side_validation and ('query_all' not in local_var_params or  # noqa: E501
                                                         local_var_params['query_all'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `query_all` when calling `get_user_app_versions`")  # noqa: E501
+        # verify the required parameter 'market_domain' is set
+        if self.api_client.client_side_validation and ('market_domain' not in local_var_params or  # noqa: E501
+                                                        local_var_params['market_domain'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `market_domain` when calling `get_user_app_versions`")  # noqa: E501
 
         collection_formats = {}
 

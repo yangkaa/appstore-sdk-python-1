@@ -67,26 +67,24 @@ configuration = openapi_client.Configuration(
 configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080",
     api_key = {
-        'api_key': 'YOUR_API_KEY'
+        'Authorization': 'YOUR_API_KEY'
     }
 )
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['api_key'] = 'Bearer'
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
-    body = openapi_client.V1AppCreateRequest() # V1AppCreateRequest | 
-market_domain = 'market_domain_example' # str | the market domain (optional)
-
+    
     try:
-        # create an app model
-        api_response = api_instance.create_app(body, market_domain=market_domain)
+        # 可绑定的商店列表
+        api_response = api_instance.bindable_markets()
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MarketOpenapiApi->create_app: %s\n" % e)
+        print("Exception when calling MarketOpenapiApi->bindable_markets: %s\n" % e)
     
 ```
 
@@ -96,6 +94,7 @@ All URIs are relative to *http://127.0.0.1:8080*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*MarketOpenapiApi* | [**bindable_markets**](docs/MarketOpenapiApi.md#bindable_markets) | **GET** /app-server/openapi/bindablemarkets | 可绑定的商店列表
 *MarketOpenapiApi* | [**create_app**](docs/MarketOpenapiApi.md#create_app) | **POST** /app-server/openapi/apps | create an app model
 *MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | post an app version
 *MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | get app image save info
@@ -113,13 +112,14 @@ Class | Method | HTTP request | Description
  - [ControllerResult](docs/ControllerResult.md)
  - [RestfulutilResult](docs/RestfulutilResult.md)
  - [V1AppBaseInfo](docs/V1AppBaseInfo.md)
- - [V1AppCreateRequest](docs/V1AppCreateRequest.md)
  - [V1AppDetailInfoResponse](docs/V1AppDetailInfoResponse.md)
  - [V1AppImageHubInfoResponse](docs/V1AppImageHubInfoResponse.md)
+ - [V1AppModelCreateRequest](docs/V1AppModelCreateRequest.md)
  - [V1AppUpdateRequest](docs/V1AppUpdateRequest.md)
  - [V1AppVersionBase](docs/V1AppVersionBase.md)
  - [V1AppVersionDetailResponse](docs/V1AppVersionDetailResponse.md)
  - [V1AppVersionListResponse](docs/V1AppVersionListResponse.md)
+ - [V1BindableMarket](docs/V1BindableMarket.md)
  - [V1CreateAppPaaSVersionRequest](docs/V1CreateAppPaaSVersionRequest.md)
  - [V1ImageInfo](docs/V1ImageInfo.md)
  - [V1MarketInfoResponse](docs/V1MarketInfoResponse.md)

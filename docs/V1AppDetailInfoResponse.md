@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **org_id** | **str** |  | 
 **publish_type** | **str** |  | 
+**show_count** | **int** |  | 
 **start_count** | **int** |  | 
 **status** | **str** |  | 
 **tags** | **list[str]** |  | 

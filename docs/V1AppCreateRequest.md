@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **introduction** | **str** |  | 
 **logo** | **str** |  | 
 **name** | **str** |  | 
+**org_id** | **str** | 组织机构 ID | 
 **publish_type** | **str** |  | 
 **tags** | **list[str]** |  | 
 

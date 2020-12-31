@@ -68,7 +68,7 @@ class V1MarketUIAppTagsResponse(object):
 
 
         :param tags: The tags of this V1MarketUIAppTagsResponse.  # noqa: E501
-        :type tags: list[str]
+        :type: list[str]
         """
         if self.local_vars_configuration.client_side_validation and tags is None:  # noqa: E501
             raise ValueError("Invalid value for `tags`, must not be `None`")  # noqa: E501

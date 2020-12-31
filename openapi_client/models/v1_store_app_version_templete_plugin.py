@@ -133,7 +133,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param id: The id of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type id: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and id is None:  # noqa: E501
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -156,7 +156,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param build_source: The build_source of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type build_source: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and build_source is None:  # noqa: E501
             raise ValueError("Invalid value for `build_source`, must not be `None`")  # noqa: E501
@@ -179,7 +179,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param build_version: The build_version of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type build_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and build_version is None:  # noqa: E501
             raise ValueError("Invalid value for `build_version`, must not be `None`")  # noqa: E501
@@ -202,7 +202,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param category: The category of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type category: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and category is None:  # noqa: E501
             raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
@@ -225,7 +225,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param code_repo: The code_repo of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type code_repo: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and code_repo is None:  # noqa: E501
             raise ValueError("Invalid value for `code_repo`, must not be `None`")  # noqa: E501
@@ -248,7 +248,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param config_groups: The config_groups of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type config_groups: list[V1StoreAppVersionTempletePluginConfigGroup]
+        :type: list[V1StoreAppVersionTempletePluginConfigGroup]
         """
 
         self._config_groups = config_groups
@@ -269,7 +269,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param create_time: The create_time of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type create_time: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -292,7 +292,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param desc: The desc of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type desc: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -315,7 +315,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param image: The image of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type image: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and image is None:  # noqa: E501
             raise ValueError("Invalid value for `image`, must not be `None`")  # noqa: E501
@@ -338,7 +338,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param origin: The origin of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type origin: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and origin is None:  # noqa: E501
             raise ValueError("Invalid value for `origin`, must not be `None`")  # noqa: E501
@@ -361,7 +361,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param origin_share_id: The origin_share_id of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type origin_share_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and origin_share_id is None:  # noqa: E501
             raise ValueError("Invalid value for `origin_share_id`, must not be `None`")  # noqa: E501
@@ -384,7 +384,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param plugin_alias: The plugin_alias of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type plugin_alias: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_alias`, must not be `None`")  # noqa: E501
@@ -407,7 +407,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param plugin_id: The plugin_id of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type plugin_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_id is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_id`, must not be `None`")  # noqa: E501
@@ -430,7 +430,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param plugin_image: The plugin_image of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type plugin_image: V1ImageInfo
+        :type: V1ImageInfo
         """
         if self.local_vars_configuration.client_side_validation and plugin_image is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_image`, must not be `None`")  # noqa: E501
@@ -453,7 +453,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param plugin_key: The plugin_key of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type plugin_key: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_key is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_key`, must not be `None`")  # noqa: E501
@@ -476,7 +476,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param plugin_name: The plugin_name of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type plugin_name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_name is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_name`, must not be `None`")  # noqa: E501
@@ -499,7 +499,7 @@ class V1StoreAppVersionTempletePlugin(object):
 
 
         :param share_image: The share_image of this V1StoreAppVersionTempletePlugin.  # noqa: E501
-        :type share_image: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and share_image is None:  # noqa: E501
             raise ValueError("Invalid value for `share_image`, must not be `None`")  # noqa: E501

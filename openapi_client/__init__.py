@@ -28,7 +28,6 @@ from openapi_client.exceptions import OpenApiException
 from openapi_client.exceptions import ApiTypeError
 from openapi_client.exceptions import ApiValueError
 from openapi_client.exceptions import ApiKeyError
-from openapi_client.exceptions import ApiAttributeError
 from openapi_client.exceptions import ApiException
 # import models into sdk package
 from openapi_client.models.controller_result import ControllerResult

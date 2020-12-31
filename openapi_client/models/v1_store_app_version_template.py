@@ -89,7 +89,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param apps: The apps of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type apps: list[V1StoreAppVersionTempleteApp]
+        :type: list[V1StoreAppVersionTempleteApp]
         """
         if self.local_vars_configuration.client_side_validation and apps is None:  # noqa: E501
             raise ValueError("Invalid value for `apps`, must not be `None`")  # noqa: E501
@@ -112,7 +112,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param group_key: The group_key of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type group_key: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and group_key is None:  # noqa: E501
             raise ValueError("Invalid value for `group_key`, must not be `None`")  # noqa: E501
@@ -135,7 +135,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param group_name: The group_name of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type group_name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and group_name is None:  # noqa: E501
             raise ValueError("Invalid value for `group_name`, must not be `None`")  # noqa: E501
@@ -158,7 +158,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param group_version: The group_version of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type group_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and group_version is None:  # noqa: E501
             raise ValueError("Invalid value for `group_version`, must not be `None`")  # noqa: E501
@@ -181,7 +181,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param plugins: The plugins of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type plugins: list[V1StoreAppVersionTempletePlugin]
+        :type: list[V1StoreAppVersionTempletePlugin]
         """
 
         self._plugins = plugins
@@ -202,7 +202,7 @@ class V1StoreAppVersionTemplate(object):
 
 
         :param template_version: The template_version of this V1StoreAppVersionTemplate.  # noqa: E501
-        :type template_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and template_version is None:  # noqa: E501
             raise ValueError("Invalid value for `template_version`, must not be `None`")  # noqa: E501

@@ -84,7 +84,7 @@ class V1AppUpdateRequest(object):
 
 
         :param desc: The desc of this V1AppUpdateRequest.  # noqa: E501
-        :type desc: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -107,7 +107,7 @@ class V1AppUpdateRequest(object):
 
 
         :param introduction: The introduction of this V1AppUpdateRequest.  # noqa: E501
-        :type introduction: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and introduction is None:  # noqa: E501
             raise ValueError("Invalid value for `introduction`, must not be `None`")  # noqa: E501
@@ -130,7 +130,7 @@ class V1AppUpdateRequest(object):
 
 
         :param logo: The logo of this V1AppUpdateRequest.  # noqa: E501
-        :type logo: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and logo is None:  # noqa: E501
             raise ValueError("Invalid value for `logo`, must not be `None`")  # noqa: E501
@@ -153,7 +153,7 @@ class V1AppUpdateRequest(object):
 
 
         :param name: The name of this V1AppUpdateRequest.  # noqa: E501
-        :type name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
@@ -176,7 +176,7 @@ class V1AppUpdateRequest(object):
 
 
         :param publish_type: The publish_type of this V1AppUpdateRequest.  # noqa: E501
-        :type publish_type: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and publish_type is None:  # noqa: E501
             raise ValueError("Invalid value for `publish_type`, must not be `None`")  # noqa: E501

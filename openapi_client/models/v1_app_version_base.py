@@ -104,7 +104,7 @@ class V1AppVersionBase(object):
 
 
         :param app_key_id: The app_key_id of this V1AppVersionBase.  # noqa: E501
-        :type app_key_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_key_id is None:  # noqa: E501
             raise ValueError("Invalid value for `app_key_id`, must not be `None`")  # noqa: E501
@@ -127,7 +127,7 @@ class V1AppVersionBase(object):
 
 
         :param app_version: The app_version of this V1AppVersionBase.  # noqa: E501
-        :type app_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_version is None:  # noqa: E501
             raise ValueError("Invalid value for `app_version`, must not be `None`")  # noqa: E501
@@ -150,7 +150,7 @@ class V1AppVersionBase(object):
 
 
         :param app_version_alias: The app_version_alias of this V1AppVersionBase.  # noqa: E501
-        :type app_version_alias: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_version_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `app_version_alias`, must not be `None`")  # noqa: E501
@@ -173,7 +173,7 @@ class V1AppVersionBase(object):
 
 
         :param create_time: The create_time of this V1AppVersionBase.  # noqa: E501
-        :type create_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -196,7 +196,7 @@ class V1AppVersionBase(object):
 
 
         :param delivery_mode: The delivery_mode of this V1AppVersionBase.  # noqa: E501
-        :type delivery_mode: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and delivery_mode is None:  # noqa: E501
             raise ValueError("Invalid value for `delivery_mode`, must not be `None`")  # noqa: E501
@@ -219,7 +219,7 @@ class V1AppVersionBase(object):
 
 
         :param desc: The desc of this V1AppVersionBase.  # noqa: E501
-        :type desc: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -242,7 +242,7 @@ class V1AppVersionBase(object):
 
 
         :param enable: The enable of this V1AppVersionBase.  # noqa: E501
-        :type enable: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and enable is None:  # noqa: E501
             raise ValueError("Invalid value for `enable`, must not be `None`")  # noqa: E501
@@ -265,7 +265,7 @@ class V1AppVersionBase(object):
 
 
         :param rainbond_version: The rainbond_version of this V1AppVersionBase.  # noqa: E501
-        :type rainbond_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and rainbond_version is None:  # noqa: E501
             raise ValueError("Invalid value for `rainbond_version`, must not be `None`")  # noqa: E501
@@ -288,7 +288,7 @@ class V1AppVersionBase(object):
 
 
         :param update_time: The update_time of this V1AppVersionBase.  # noqa: E501
-        :type update_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and update_time is None:  # noqa: E501
             raise ValueError("Invalid value for `update_time`, must not be `None`")  # noqa: E501
@@ -311,7 +311,7 @@ class V1AppVersionBase(object):
 
 
         :param update_version: The update_version of this V1AppVersionBase.  # noqa: E501
-        :type update_version: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and update_version is None:  # noqa: E501
             raise ValueError("Invalid value for `update_version`, must not be `None`")  # noqa: E501

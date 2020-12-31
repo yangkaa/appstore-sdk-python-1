@@ -88,7 +88,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param container_port: The container_port of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type container_port: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and container_port is None:  # noqa: E501
             raise ValueError("Invalid value for `container_port`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param is_inner_service: The is_inner_service of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type is_inner_service: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and is_inner_service is None:  # noqa: E501
             raise ValueError("Invalid value for `is_inner_service`, must not be `None`")  # noqa: E501
@@ -134,7 +134,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param is_outer_service: The is_outer_service of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type is_outer_service: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and is_outer_service is None:  # noqa: E501
             raise ValueError("Invalid value for `is_outer_service`, must not be `None`")  # noqa: E501
@@ -157,7 +157,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param port_alias: The port_alias of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type port_alias: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and port_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `port_alias`, must not be `None`")  # noqa: E501
@@ -180,7 +180,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param protocol: The protocol of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type protocol: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and protocol is None:  # noqa: E501
             raise ValueError("Invalid value for `protocol`, must not be `None`")  # noqa: E501
@@ -203,7 +203,7 @@ class V1StoreAppVersionTempleteAppPort(object):
 
 
         :param tenant_id: The tenant_id of this V1StoreAppVersionTempleteAppPort.  # noqa: E501
-        :type tenant_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and tenant_id is None:  # noqa: E501
             raise ValueError("Invalid value for `tenant_id`, must not be `None`")  # noqa: E501

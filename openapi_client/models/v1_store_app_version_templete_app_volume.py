@@ -88,7 +88,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param access_mode: The access_mode of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type access_mode: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and access_mode is None:  # noqa: E501
             raise ValueError("Invalid value for `access_mode`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param file_content: The file_content of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type file_content: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and file_content is None:  # noqa: E501
             raise ValueError("Invalid value for `file_content`, must not be `None`")  # noqa: E501
@@ -134,7 +134,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param volume_capacity: The volume_capacity of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type volume_capacity: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and volume_capacity is None:  # noqa: E501
             raise ValueError("Invalid value for `volume_capacity`, must not be `None`")  # noqa: E501
@@ -157,7 +157,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param volume_name: The volume_name of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type volume_name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and volume_name is None:  # noqa: E501
             raise ValueError("Invalid value for `volume_name`, must not be `None`")  # noqa: E501
@@ -180,7 +180,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param volume_path: The volume_path of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type volume_path: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and volume_path is None:  # noqa: E501
             raise ValueError("Invalid value for `volume_path`, must not be `None`")  # noqa: E501
@@ -203,7 +203,7 @@ class V1StoreAppVersionTempleteAppVolume(object):
 
 
         :param volume_type: The volume_type of this V1StoreAppVersionTempleteAppVolume.  # noqa: E501
-        :type volume_type: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and volume_type is None:  # noqa: E501
             raise ValueError("Invalid value for `volume_type`, must not be `None`")  # noqa: E501

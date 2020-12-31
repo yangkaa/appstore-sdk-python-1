@@ -124,7 +124,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param id: The id of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type id: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and id is None:  # noqa: E501
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -147,7 +147,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param cmd: The cmd of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type cmd: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and cmd is None:  # noqa: E501
             raise ValueError("Invalid value for `cmd`, must not be `None`")  # noqa: E501
@@ -170,7 +170,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param failure_threshold: The failure_threshold of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type failure_threshold: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and failure_threshold is None:  # noqa: E501
             raise ValueError("Invalid value for `failure_threshold`, must not be `None`")  # noqa: E501
@@ -193,7 +193,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param http_header: The http_header of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type http_header: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and http_header is None:  # noqa: E501
             raise ValueError("Invalid value for `http_header`, must not be `None`")  # noqa: E501
@@ -216,7 +216,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param initial_delay_second: The initial_delay_second of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type initial_delay_second: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and initial_delay_second is None:  # noqa: E501
             raise ValueError("Invalid value for `initial_delay_second`, must not be `None`")  # noqa: E501
@@ -239,7 +239,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param is_used: The is_used of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type is_used: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and is_used is None:  # noqa: E501
             raise ValueError("Invalid value for `is_used`, must not be `None`")  # noqa: E501
@@ -262,7 +262,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param mode: The mode of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type mode: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and mode is None:  # noqa: E501
             raise ValueError("Invalid value for `mode`, must not be `None`")  # noqa: E501
@@ -285,7 +285,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param path: The path of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type path: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and path is None:  # noqa: E501
             raise ValueError("Invalid value for `path`, must not be `None`")  # noqa: E501
@@ -308,7 +308,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param period_second: The period_second of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type period_second: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and period_second is None:  # noqa: E501
             raise ValueError("Invalid value for `period_second`, must not be `None`")  # noqa: E501
@@ -331,7 +331,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param port: The port of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type port: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and port is None:  # noqa: E501
             raise ValueError("Invalid value for `port`, must not be `None`")  # noqa: E501
@@ -354,7 +354,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param probe_id: The probe_id of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type probe_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and probe_id is None:  # noqa: E501
             raise ValueError("Invalid value for `probe_id`, must not be `None`")  # noqa: E501
@@ -377,7 +377,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param scheme: The scheme of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type scheme: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and scheme is None:  # noqa: E501
             raise ValueError("Invalid value for `scheme`, must not be `None`")  # noqa: E501
@@ -400,7 +400,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param service_id: The service_id of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type service_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and service_id is None:  # noqa: E501
             raise ValueError("Invalid value for `service_id`, must not be `None`")  # noqa: E501
@@ -423,7 +423,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param success_threshold: The success_threshold of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type success_threshold: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and success_threshold is None:  # noqa: E501
             raise ValueError("Invalid value for `success_threshold`, must not be `None`")  # noqa: E501
@@ -446,7 +446,7 @@ class V1StoreAppVersionTempleteAppProbe(object):
 
 
         :param timeout_second: The timeout_second of this V1StoreAppVersionTempleteAppProbe.  # noqa: E501
-        :type timeout_second: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and timeout_second is None:  # noqa: E501
             raise ValueError("Invalid value for `timeout_second`, must not be `None`")  # noqa: E501

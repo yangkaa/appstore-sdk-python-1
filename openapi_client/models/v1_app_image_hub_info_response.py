@@ -84,7 +84,7 @@ class V1AppImageHubInfoResponse(object):
 
 
         :param hub_password: The hub_password of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type hub_password: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and hub_password is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_password`, must not be `None`")  # noqa: E501
@@ -107,7 +107,7 @@ class V1AppImageHubInfoResponse(object):
 
 
         :param hub_url: The hub_url of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type hub_url: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and hub_url is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_url`, must not be `None`")  # noqa: E501
@@ -130,7 +130,7 @@ class V1AppImageHubInfoResponse(object):
 
 
         :param hub_user: The hub_user of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type hub_user: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and hub_user is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_user`, must not be `None`")  # noqa: E501
@@ -153,7 +153,7 @@ class V1AppImageHubInfoResponse(object):
 
 
         :param is_trust: The is_trust of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type is_trust: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and is_trust is None:  # noqa: E501
             raise ValueError("Invalid value for `is_trust`, must not be `None`")  # noqa: E501
@@ -176,7 +176,7 @@ class V1AppImageHubInfoResponse(object):
 
 
         :param namespace: The namespace of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type namespace: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and namespace is None:  # noqa: E501
             raise ValueError("Invalid value for `namespace`, must not be `None`")  # noqa: E501

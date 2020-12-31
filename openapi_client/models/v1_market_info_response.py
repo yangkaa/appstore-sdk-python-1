@@ -84,7 +84,7 @@ class V1MarketInfoResponse(object):
 
 
         :param access_actions: The access_actions of this V1MarketInfoResponse.  # noqa: E501
-        :type access_actions: list[str]
+        :type: list[str]
         """
         if self.local_vars_configuration.client_side_validation and access_actions is None:  # noqa: E501
             raise ValueError("Invalid value for `access_actions`, must not be `None`")  # noqa: E501
@@ -107,7 +107,7 @@ class V1MarketInfoResponse(object):
 
 
         :param create_time: The create_time of this V1MarketInfoResponse.  # noqa: E501
-        :type create_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -130,7 +130,7 @@ class V1MarketInfoResponse(object):
 
 
         :param description: The description of this V1MarketInfoResponse.  # noqa: E501
-        :type description: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and description is None:  # noqa: E501
             raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
@@ -153,7 +153,7 @@ class V1MarketInfoResponse(object):
 
 
         :param name: The name of this V1MarketInfoResponse.  # noqa: E501
-        :type name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
@@ -176,7 +176,7 @@ class V1MarketInfoResponse(object):
 
 
         :param status: The status of this V1MarketInfoResponse.  # noqa: E501
-        :type status: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501

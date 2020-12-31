@@ -68,7 +68,7 @@ class V1AppVersionListResponse(object):
 
 
         :param versions: The versions of this V1AppVersionListResponse.  # noqa: E501
-        :type versions: list[V1AppVersionBase]
+        :type: list[V1AppVersionBase]
         """
         if self.local_vars_configuration.client_side_validation and versions is None:  # noqa: E501
             raise ValueError("Invalid value for `versions`, must not be `None`")  # noqa: E501

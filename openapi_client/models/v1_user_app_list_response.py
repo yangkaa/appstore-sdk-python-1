@@ -80,7 +80,7 @@ class V1UserAppListResponse(object):
 
 
         :param apps: The apps of this V1UserAppListResponse.  # noqa: E501
-        :type apps: list[V1AppBaseInfo]
+        :type: list[V1AppBaseInfo]
         """
         if self.local_vars_configuration.client_side_validation and apps is None:  # noqa: E501
             raise ValueError("Invalid value for `apps`, must not be `None`")  # noqa: E501
@@ -103,7 +103,7 @@ class V1UserAppListResponse(object):
 
 
         :param page: The page of this V1UserAppListResponse.  # noqa: E501
-        :type page: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and page is None:  # noqa: E501
             raise ValueError("Invalid value for `page`, must not be `None`")  # noqa: E501
@@ -126,7 +126,7 @@ class V1UserAppListResponse(object):
 
 
         :param page_size: The page_size of this V1UserAppListResponse.  # noqa: E501
-        :type page_size: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and page_size is None:  # noqa: E501
             raise ValueError("Invalid value for `page_size`, must not be `None`")  # noqa: E501
@@ -149,7 +149,7 @@ class V1UserAppListResponse(object):
 
 
         :param total: The total of this V1UserAppListResponse.  # noqa: E501
-        :type total: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and total is None:  # noqa: E501
             raise ValueError("Invalid value for `total`, must not be `None`")  # noqa: E501

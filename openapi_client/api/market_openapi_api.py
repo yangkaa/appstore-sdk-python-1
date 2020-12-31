@@ -42,28 +42,22 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.create_app(body, async_req=True)
         >>> result = thread.get()
 
-        :param body: (required)
-        :type body: V1AppModelCreateRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param V1AppModelCreateRequest body: (required)
+        :param str market_domain: the market domain
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppDetailInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppDetailInfoResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.create_app_with_http_info(body, **kwargs)  # noqa: E501
@@ -73,35 +67,24 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.create_app_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
-        :param body: (required)
-        :type body: V1AppModelCreateRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param V1AppModelCreateRequest body: (required)
+        :param str market_domain: the market domain
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -115,8 +98,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -174,38 +156,30 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def create_app_version(self, app_id, body, **kwargs):  # noqa: E501
         """post an app version  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.create_app_version(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param body: (required)
-        :type body: V1CreateAppPaaSVersionRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param V1CreateAppPaaSVersionRequest body: (required)
+        :param str market_domain: the market domain
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppVersionBase
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppVersionBase
         """
         kwargs['_return_http_data_only'] = True
         return self.create_app_version_with_http_info(app_id, body, **kwargs)  # noqa: E501
@@ -215,37 +189,25 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.create_app_version_with_http_info(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param body: (required)
-        :type body: V1CreateAppPaaSVersionRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param V1CreateAppPaaSVersionRequest body: (required)
+        :param str market_domain: the market domain
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppVersionBase, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppVersionBase, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -260,8 +222,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -325,36 +286,29 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_app_hub_info(self, app_id, **kwargs):  # noqa: E501
         """get app image save info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_app_hub_info(app_id, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str market_domain: the market domain
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppImageHubInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppImageHubInfoResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_app_hub_info_with_http_info(app_id, **kwargs)  # noqa: E501
@@ -364,35 +318,24 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_app_hub_info_with_http_info(app_id, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str market_domain: the market domain
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppImageHubInfoResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppImageHubInfoResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -406,8 +349,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -461,34 +403,28 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_market_info(self, **kwargs):  # noqa: E501
         """get mrket info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_market_info(async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str market_domain: the market domain
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1MarketInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1MarketInfoResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_market_info_with_http_info(**kwargs)  # noqa: E501
@@ -498,33 +434,23 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_market_info_with_http_info(async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str market_domain: the market domain
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1MarketInfoResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1MarketInfoResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -537,8 +463,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -586,36 +511,29 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_user_app_detail(self, app_id, market_domain, **kwargs):  # noqa: E501
         """Query the specified application details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_detail(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str market_domain: the market domain (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppDetailInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppDetailInfoResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_user_app_detail_with_http_info(app_id, market_domain, **kwargs)  # noqa: E501
@@ -625,35 +543,24 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_detail_with_http_info(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str market_domain: the market domain (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -667,8 +574,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -726,42 +632,32 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_user_app_list(self, market_domain, **kwargs):  # noqa: E501
         """A list of installable applications  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_list(market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param query: The search criteria
-        :type query: str
-        :param query_all: true
-        :type query_all: bool
-        :param page: query page num
-        :type page: int
-        :param page_size: query page size, if -1 return all app
-        :type page_size: int
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str market_domain: the market domain (required)
+        :param str query: The search criteria
+        :param bool query_all: true
+        :param int page: query page num
+        :param int page_size: query page size, if -1 return all app
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1UserAppListResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1UserAppListResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_user_app_list_with_http_info(market_domain, **kwargs)  # noqa: E501
@@ -771,41 +667,27 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_list_with_http_info(market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param query: The search criteria
-        :type query: str
-        :param query_all: true
-        :type query_all: bool
-        :param page: query page num
-        :type page: int
-        :param page_size: query page size, if -1 return all app
-        :type page_size: int
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str market_domain: the market domain (required)
+        :param str query: The search criteria
+        :param bool query_all: true
+        :param int page: query page num
+        :param int page_size: query page size, if -1 return all app
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1UserAppListResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1UserAppListResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -822,8 +704,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -883,42 +764,32 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_user_app_version_detail(self, app_id, version, **kwargs):  # noqa: E501
         """Query the specified version details of the specified application  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_version_detail(app_id, version, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param version: The app version (required)
-        :type version: str
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param for_install: Whether used for installation
-        :type for_install: bool
-        :param get_template: Whether get templete
-        :type get_template: bool
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str version: The app version (required)
+        :param str market_domain: the market domain
+        :param bool for_install: Whether used for installation
+        :param bool get_template: Whether get templete
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppVersionDetailResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppVersionDetailResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_user_app_version_detail_with_http_info(app_id, version, **kwargs)  # noqa: E501
@@ -928,41 +799,27 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_version_detail_with_http_info(app_id, version, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param version: The app version (required)
-        :type version: str
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param for_install: Whether used for installation
-        :type for_install: bool
-        :param get_template: Whether get templete
-        :type get_template: bool
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param str version: The app version (required)
+        :param str market_domain: the market domain
+        :param bool for_install: Whether used for installation
+        :param bool get_template: Whether get templete
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppVersionDetailResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppVersionDetailResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -979,8 +836,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -1044,38 +900,30 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def get_user_app_versions(self, app_id, query_all, market_domain, **kwargs):  # noqa: E501
         """Query the specified application version list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_versions(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param query_all: query all versions, must have write perm (required)
-        :type query_all: bool
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param bool query_all: query all versions, must have write perm (required)
+        :param str market_domain: the market domain (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppVersionListResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppVersionListResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.get_user_app_versions_with_http_info(app_id, query_all, market_domain, **kwargs)  # noqa: E501
@@ -1085,37 +933,25 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.get_user_app_versions_with_http_info(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param query_all: query all versions, must have write perm (required)
-        :type query_all: bool
-        :param market_domain: the market domain (required)
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param bool query_all: query all versions, must have write perm (required)
+        :param str market_domain: the market domain (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppVersionListResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppVersionListResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -1130,8 +966,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -1195,38 +1030,30 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)
 
     def update_app(self, app_id, body, **kwargs):  # noqa: E501
         """update app model base info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.update_app(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param body: (required)
-        :type body: V1AppUpdateRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param V1AppUpdateRequest body: (required)
+        :param str market_domain: the market domain
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: Returns the result object.
+        :return: V1AppDetailInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: V1AppDetailInfoResponse
         """
         kwargs['_return_http_data_only'] = True
         return self.update_app_with_http_info(app_id, body, **kwargs)  # noqa: E501
@@ -1236,37 +1063,25 @@ class MarketOpenapiApi(object):
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-
         >>> thread = api.update_app_with_http_info(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: The app ID (required)
-        :type app_id: str
-        :param body: (required)
-        :type body: V1AppUpdateRequest
-        :param market_domain: the market domain
-        :type market_domain: str
-        :param async_req: Whether to execute the request asynchronously.
-        :type async_req: bool, optional
+        :param async_req bool: execute request asynchronously
+        :param str app_id: The app ID (required)
+        :param V1AppUpdateRequest body: (required)
+        :param str market_domain: the market domain
         :param _return_http_data_only: response data without head status code
                                        and headers
-        :type _return_http_data_only: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
-        :type _preload_content: bool, optional
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :param _request_auth: set to override the auth_settings for an a single
-                              request; this effectively ignores the authentication
-                              in the spec for a single request.
-        :type _request_auth: dict, optional
-        :return: Returns the result object.
+        :return: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
-        :rtype: tuple(V1AppDetailInfoResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
         local_var_params = locals()
@@ -1281,8 +1096,7 @@ class MarketOpenapiApi(object):
                 'async_req',
                 '_return_http_data_only',
                 '_preload_content',
-                '_request_timeout',
-                '_request_auth'
+                '_request_timeout'
             ]
         )
 
@@ -1346,5 +1160,4 @@ class MarketOpenapiApi(object):
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
             _preload_content=local_var_params.get('_preload_content', True),
             _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats,
-            _request_auth=local_var_params.get('_request_auth'))
+            collection_formats=collection_formats)

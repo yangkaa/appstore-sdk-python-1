@@ -68,7 +68,7 @@ class V1StoreAppVersionTempleteAppDepService(object):
 
 
         :param dep_service_key: The dep_service_key of this V1StoreAppVersionTempleteAppDepService.  # noqa: E501
-        :type dep_service_key: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and dep_service_key is None:  # noqa: E501
             raise ValueError("Invalid value for `dep_service_key`, must not be `None`")  # noqa: E501

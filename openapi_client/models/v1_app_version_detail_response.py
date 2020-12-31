@@ -120,7 +120,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param app_key_id: The app_key_id of this V1AppVersionDetailResponse.  # noqa: E501
-        :type app_key_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_key_id is None:  # noqa: E501
             raise ValueError("Invalid value for `app_key_id`, must not be `None`")  # noqa: E501
@@ -143,7 +143,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param app_name: The app_name of this V1AppVersionDetailResponse.  # noqa: E501
-        :type app_name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_name is None:  # noqa: E501
             raise ValueError("Invalid value for `app_name`, must not be `None`")  # noqa: E501
@@ -166,7 +166,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param create_time: The create_time of this V1AppVersionDetailResponse.  # noqa: E501
-        :type create_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -189,7 +189,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param delivery_mode: The delivery_mode of this V1AppVersionDetailResponse.  # noqa: E501
-        :type delivery_mode: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and delivery_mode is None:  # noqa: E501
             raise ValueError("Invalid value for `delivery_mode`, must not be `None`")  # noqa: E501
@@ -212,7 +212,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param description: The description of this V1AppVersionDetailResponse.  # noqa: E501
-        :type description: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and description is None:  # noqa: E501
             raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
@@ -235,7 +235,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param enable: The enable of this V1AppVersionDetailResponse.  # noqa: E501
-        :type enable: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and enable is None:  # noqa: E501
             raise ValueError("Invalid value for `enable`, must not be `None`")  # noqa: E501
@@ -258,7 +258,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param market_id: The market_id of this V1AppVersionDetailResponse.  # noqa: E501
-        :type market_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and market_id is None:  # noqa: E501
             raise ValueError("Invalid value for `market_id`, must not be `None`")  # noqa: E501
@@ -281,7 +281,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param rainbond_version: The rainbond_version of this V1AppVersionDetailResponse.  # noqa: E501
-        :type rainbond_version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and rainbond_version is None:  # noqa: E501
             raise ValueError("Invalid value for `rainbond_version`, must not be `None`")  # noqa: E501
@@ -304,7 +304,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param template: The template of this V1AppVersionDetailResponse.  # noqa: E501
-        :type template: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and template is None:  # noqa: E501
             raise ValueError("Invalid value for `template`, must not be `None`")  # noqa: E501
@@ -327,7 +327,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param template_type: The template_type of this V1AppVersionDetailResponse.  # noqa: E501
-        :type template_type: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and template_type is None:  # noqa: E501
             raise ValueError("Invalid value for `template_type`, must not be `None`")  # noqa: E501
@@ -350,7 +350,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param update_time: The update_time of this V1AppVersionDetailResponse.  # noqa: E501
-        :type update_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and update_time is None:  # noqa: E501
             raise ValueError("Invalid value for `update_time`, must not be `None`")  # noqa: E501
@@ -373,7 +373,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param update_version: The update_version of this V1AppVersionDetailResponse.  # noqa: E501
-        :type update_version: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and update_version is None:  # noqa: E501
             raise ValueError("Invalid value for `update_version`, must not be `None`")  # noqa: E501
@@ -396,7 +396,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param version: The version of this V1AppVersionDetailResponse.  # noqa: E501
-        :type version: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and version is None:  # noqa: E501
             raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
@@ -419,7 +419,7 @@ class V1AppVersionDetailResponse(object):
 
 
         :param version_alias: The version_alias of this V1AppVersionDetailResponse.  # noqa: E501
-        :type version_alias: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and version_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `version_alias`, must not be `None`")  # noqa: E501

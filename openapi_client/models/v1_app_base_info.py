@@ -152,7 +152,7 @@ class V1AppBaseInfo(object):
 
 
         :param app_detail_url: The app_detail_url of this V1AppBaseInfo.  # noqa: E501
-        :type app_detail_url: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_detail_url is None:  # noqa: E501
             raise ValueError("Invalid value for `app_detail_url`, must not be `None`")  # noqa: E501
@@ -175,7 +175,7 @@ class V1AppBaseInfo(object):
 
 
         :param app_key_id: The app_key_id of this V1AppBaseInfo.  # noqa: E501
-        :type app_key_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and app_key_id is None:  # noqa: E501
             raise ValueError("Invalid value for `app_key_id`, must not be `None`")  # noqa: E501
@@ -198,7 +198,7 @@ class V1AppBaseInfo(object):
 
 
         :param create_time: The create_time of this V1AppBaseInfo.  # noqa: E501
-        :type create_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -221,7 +221,7 @@ class V1AppBaseInfo(object):
 
 
         :param desc: The desc of this V1AppBaseInfo.  # noqa: E501
-        :type desc: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -244,7 +244,7 @@ class V1AppBaseInfo(object):
 
 
         :param dev_status: The dev_status of this V1AppBaseInfo.  # noqa: E501
-        :type dev_status: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and dev_status is None:  # noqa: E501
             raise ValueError("Invalid value for `dev_status`, must not be `None`")  # noqa: E501
@@ -267,7 +267,7 @@ class V1AppBaseInfo(object):
 
 
         :param download_count: The download_count of this V1AppBaseInfo.  # noqa: E501
-        :type download_count: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and download_count is None:  # noqa: E501
             raise ValueError("Invalid value for `download_count`, must not be `None`")  # noqa: E501
@@ -290,7 +290,7 @@ class V1AppBaseInfo(object):
 
 
         :param install_count: The install_count of this V1AppBaseInfo.  # noqa: E501
-        :type install_count: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and install_count is None:  # noqa: E501
             raise ValueError("Invalid value for `install_count`, must not be `None`")  # noqa: E501
@@ -313,7 +313,7 @@ class V1AppBaseInfo(object):
 
 
         :param introduction: The introduction of this V1AppBaseInfo.  # noqa: E501
-        :type introduction: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and introduction is None:  # noqa: E501
             raise ValueError("Invalid value for `introduction`, must not be `None`")  # noqa: E501
@@ -336,7 +336,7 @@ class V1AppBaseInfo(object):
 
 
         :param introduction_html: The introduction_html of this V1AppBaseInfo.  # noqa: E501
-        :type introduction_html: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and introduction_html is None:  # noqa: E501
             raise ValueError("Invalid value for `introduction_html`, must not be `None`")  # noqa: E501
@@ -359,7 +359,7 @@ class V1AppBaseInfo(object):
 
 
         :param is_official: The is_official of this V1AppBaseInfo.  # noqa: E501
-        :type is_official: bool
+        :type: bool
         """
         if self.local_vars_configuration.client_side_validation and is_official is None:  # noqa: E501
             raise ValueError("Invalid value for `is_official`, must not be `None`")  # noqa: E501
@@ -382,7 +382,7 @@ class V1AppBaseInfo(object):
 
 
         :param logo: The logo of this V1AppBaseInfo.  # noqa: E501
-        :type logo: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and logo is None:  # noqa: E501
             raise ValueError("Invalid value for `logo`, must not be `None`")  # noqa: E501
@@ -405,7 +405,7 @@ class V1AppBaseInfo(object):
 
 
         :param market_id: The market_id of this V1AppBaseInfo.  # noqa: E501
-        :type market_id: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and market_id is None:  # noqa: E501
             raise ValueError("Invalid value for `market_id`, must not be `None`")  # noqa: E501
@@ -428,7 +428,7 @@ class V1AppBaseInfo(object):
 
 
         :param market_name: The market_name of this V1AppBaseInfo.  # noqa: E501
-        :type market_name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and market_name is None:  # noqa: E501
             raise ValueError("Invalid value for `market_name`, must not be `None`")  # noqa: E501
@@ -451,7 +451,7 @@ class V1AppBaseInfo(object):
 
 
         :param market_url: The market_url of this V1AppBaseInfo.  # noqa: E501
-        :type market_url: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and market_url is None:  # noqa: E501
             raise ValueError("Invalid value for `market_url`, must not be `None`")  # noqa: E501
@@ -474,7 +474,7 @@ class V1AppBaseInfo(object):
 
 
         :param name: The name of this V1AppBaseInfo.  # noqa: E501
-        :type name: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
@@ -497,7 +497,7 @@ class V1AppBaseInfo(object):
 
 
         :param publish_type: The publish_type of this V1AppBaseInfo.  # noqa: E501
-        :type publish_type: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and publish_type is None:  # noqa: E501
             raise ValueError("Invalid value for `publish_type`, must not be `None`")  # noqa: E501
@@ -520,7 +520,7 @@ class V1AppBaseInfo(object):
 
 
         :param show_count: The show_count of this V1AppBaseInfo.  # noqa: E501
-        :type show_count: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and show_count is None:  # noqa: E501
             raise ValueError("Invalid value for `show_count`, must not be `None`")  # noqa: E501
@@ -543,7 +543,7 @@ class V1AppBaseInfo(object):
 
 
         :param start_count: The start_count of this V1AppBaseInfo.  # noqa: E501
-        :type start_count: int
+        :type: int
         """
         if self.local_vars_configuration.client_side_validation and start_count is None:  # noqa: E501
             raise ValueError("Invalid value for `start_count`, must not be `None`")  # noqa: E501
@@ -566,7 +566,7 @@ class V1AppBaseInfo(object):
 
 
         :param status: The status of this V1AppBaseInfo.  # noqa: E501
-        :type status: str
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
@@ -589,7 +589,7 @@ class V1AppBaseInfo(object):
 
 
         :param tags: The tags of this V1AppBaseInfo.  # noqa: E501
-        :type tags: list[str]
+        :type: list[str]
         """
         if self.local_vars_configuration.client_side_validation and tags is None:  # noqa: E501
             raise ValueError("Invalid value for `tags`, must not be `None`")  # noqa: E501
@@ -612,7 +612,7 @@ class V1AppBaseInfo(object):
 
 
         :param update_time: The update_time of this V1AppBaseInfo.  # noqa: E501
-        :type update_time: datetime
+        :type: datetime
         """
         if self.local_vars_configuration.client_side_validation and update_time is None:  # noqa: E501
             raise ValueError("Invalid value for `update_time`, must not be `None`")  # noqa: E501
@@ -635,7 +635,7 @@ class V1AppBaseInfo(object):
 
 
         :param versions: The versions of this V1AppBaseInfo.  # noqa: E501
-        :type versions: list[V1AppVersionBase]
+        :type: list[V1AppVersionBase]
         """
         if self.local_vars_configuration.client_side_validation and versions is None:  # noqa: E501
             raise ValueError("Invalid value for `versions`, must not be `None`")  # noqa: E501

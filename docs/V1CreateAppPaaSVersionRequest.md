@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | 
 **rainbond_version** | **str** |  | 
-**template** | [**V1StoreAppVersionTemplate**](V1StoreAppVersionTemplate.md) |  | 
+**template** | [**V1alpha1RainbondApplicationConfig**](V1alpha1RainbondApplicationConfig.md) |  | 
 **template_type** | **str** |  | 
 **version** | **str** |  | 
 **version_alias** | **str** |  | 

@@ -38,7 +38,8 @@ class V1MarketInfoResponse(object):
         'create_time': 'datetime',
         'description': 'str',
         'name': 'str',
-        'status': 'int'
+        'status': 'int',
+        'version': 'str'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class V1MarketInfoResponse(object):
         'create_time': 'createTime',
         'description': 'description',
         'name': 'name',
-        'status': 'status'
+        'status': 'status',
+        'version': 'version'
     }
 
-    def __init__(self, access_actions=None, create_time=None, description=None, name=None, status=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, access_actions=None, create_time=None, description=None, name=None, status=None, version=None, local_vars_configuration=None):  # noqa: E501
         """V1MarketInfoResponse - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -60,6 +62,7 @@ class V1MarketInfoResponse(object):
         self._description = None
         self._name = None
         self._status = None
+        self._version = None
         self.discriminator = None
 
         self.access_actions = access_actions
@@ -67,6 +70,7 @@ class V1MarketInfoResponse(object):
         self.description = description
         self.name = name
         self.status = status
+        self.version = version
 
     @property
     def access_actions(self):
@@ -192,6 +196,31 @@ class V1MarketInfoResponse(object):
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
 
         self._status = status
+
+    @property
+    def version(self):
+        """Gets the version of this V1MarketInfoResponse.  # noqa: E501
+
+        当前SAAS版本  # noqa: E501
+
+        :return: The version of this V1MarketInfoResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this V1MarketInfoResponse.
+
+        当前SAAS版本  # noqa: E501
+
+        :param version: The version of this V1MarketInfoResponse.  # noqa: E501
+        :type: str
+        """
+        if self.local_vars_configuration.client_side_validation and version is None:  # noqa: E501
+            raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
+
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

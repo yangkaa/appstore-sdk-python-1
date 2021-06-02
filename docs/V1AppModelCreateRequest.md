@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **introduction** | **str** | 介绍 | 
 **logo** | **str** | logo | 
 **name** | **str** | 应用名称 | 
+**org_id** | **str** |  | [optional] 
 **publish_type** | **str** | 发布类型. private: 私有; public: 公开. | 
 **tags** | **list[str]** | 标签 | 
 

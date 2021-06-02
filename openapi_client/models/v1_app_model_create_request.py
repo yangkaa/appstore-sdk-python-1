@@ -38,6 +38,7 @@ class V1AppModelCreateRequest(object):
         'introduction': 'str',
         'logo': 'str',
         'name': 'str',
+        'org_id': 'str',
         'publish_type': 'str',
         'tags': 'list[str]'
     }
@@ -47,11 +48,12 @@ class V1AppModelCreateRequest(object):
         'introduction': 'introduction',
         'logo': 'logo',
         'name': 'name',
+        'org_id': 'orgID',
         'publish_type': 'publishType',
         'tags': 'tags'
     }
 
-    def __init__(self, desc=None, introduction=None, logo=None, name=None, publish_type=None, tags=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, desc=None, introduction=None, logo=None, name=None, org_id=None, publish_type=None, tags=None, local_vars_configuration=None):  # noqa: E501
         """V1AppModelCreateRequest - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -61,6 +63,7 @@ class V1AppModelCreateRequest(object):
         self._introduction = None
         self._logo = None
         self._name = None
+        self._org_id = None
         self._publish_type = None
         self._tags = None
         self.discriminator = None
@@ -69,6 +72,8 @@ class V1AppModelCreateRequest(object):
         self.introduction = introduction
         self.logo = logo
         self.name = name
+        if org_id is not None:
+            self.org_id = org_id
         self.publish_type = publish_type
         self.tags = tags
 
@@ -171,6 +176,27 @@ class V1AppModelCreateRequest(object):
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
         self._name = name
+
+    @property
+    def org_id(self):
+        """Gets the org_id of this V1AppModelCreateRequest.  # noqa: E501
+
+
+        :return: The org_id of this V1AppModelCreateRequest.  # noqa: E501
+        :rtype: str
+        """
+        return self._org_id
+
+    @org_id.setter
+    def org_id(self, org_id):
+        """Sets the org_id of this V1AppModelCreateRequest.
+
+
+        :param org_id: The org_id of this V1AppModelCreateRequest.  # noqa: E501
+        :type: str
+        """
+
+        self._org_id = org_id
 
     @property
     def publish_type(self):

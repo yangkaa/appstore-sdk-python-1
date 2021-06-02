@@ -1,11 +1,12 @@
-# V1alpha1ComponentShareVolume
+# V1Organization
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mnt_dir** | **str** |  | 
-**mnt_name** | **str** |  | 
-**service_share_uuid** | **str** |  | 
+**desc** | **str** | 描述 | 
+**eid** | **str** | 企业 ID | 
+**name** | **str** | 名称 | 
+**org_id** | **str** | 组织机构 ID | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

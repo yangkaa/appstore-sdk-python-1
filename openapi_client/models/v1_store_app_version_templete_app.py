@@ -187,7 +187,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param category: The category of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type category: str
         """
         if self.local_vars_configuration.client_side_validation and category is None:  # noqa: E501
             raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
@@ -210,7 +210,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param cmd: The cmd of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type cmd: str
         """
         if self.local_vars_configuration.client_side_validation and cmd is None:  # noqa: E501
             raise ValueError("Invalid value for `cmd`, must not be `None`")  # noqa: E501
@@ -233,7 +233,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param dep_service_map_list: The dep_service_map_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppDepService]
+        :type dep_service_map_list: list[V1StoreAppVersionTempleteAppDepService]
         """
         if self.local_vars_configuration.client_side_validation and dep_service_map_list is None:  # noqa: E501
             raise ValueError("Invalid value for `dep_service_map_list`, must not be `None`")  # noqa: E501
@@ -256,7 +256,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param deploy_version: The deploy_version of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type deploy_version: str
         """
         if self.local_vars_configuration.client_side_validation and deploy_version is None:  # noqa: E501
             raise ValueError("Invalid value for `deploy_version`, must not be `None`")  # noqa: E501
@@ -279,7 +279,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param extend_method: The extend_method of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type extend_method: str
         """
         if self.local_vars_configuration.client_side_validation and extend_method is None:  # noqa: E501
             raise ValueError("Invalid value for `extend_method`, must not be `None`")  # noqa: E501
@@ -302,7 +302,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param extend_method_map: The extend_method_map of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: V1StoreAppVersionTempleteAppExtendMethodRule
+        :type extend_method_map: V1StoreAppVersionTempleteAppExtendMethodRule
         """
         if self.local_vars_configuration.client_side_validation and extend_method_map is None:  # noqa: E501
             raise ValueError("Invalid value for `extend_method_map`, must not be `None`")  # noqa: E501
@@ -325,7 +325,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param image: The image of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type image: str
         """
         if self.local_vars_configuration.client_side_validation and image is None:  # noqa: E501
             raise ValueError("Invalid value for `image`, must not be `None`")  # noqa: E501
@@ -348,7 +348,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param language: The language of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type language: str
         """
         if self.local_vars_configuration.client_side_validation and language is None:  # noqa: E501
             raise ValueError("Invalid value for `language`, must not be `None`")  # noqa: E501
@@ -371,7 +371,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param memory: The memory of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: int
+        :type memory: int
         """
         if self.local_vars_configuration.client_side_validation and memory is None:  # noqa: E501
             raise ValueError("Invalid value for `memory`, must not be `None`")  # noqa: E501
@@ -394,7 +394,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param mnt_relation_list: The mnt_relation_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppShareVolume]
+        :type mnt_relation_list: list[V1StoreAppVersionTempleteAppShareVolume]
         """
         if self.local_vars_configuration.client_side_validation and mnt_relation_list is None:  # noqa: E501
             raise ValueError("Invalid value for `mnt_relation_list`, must not be `None`")  # noqa: E501
@@ -417,7 +417,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param port_map_list: The port_map_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppPort]
+        :type port_map_list: list[V1StoreAppVersionTempleteAppPort]
         """
         if self.local_vars_configuration.client_side_validation and port_map_list is None:  # noqa: E501
             raise ValueError("Invalid value for `port_map_list`, must not be `None`")  # noqa: E501
@@ -440,7 +440,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param probes: The probes of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppProbe]
+        :type probes: list[V1StoreAppVersionTempleteAppProbe]
         """
         if self.local_vars_configuration.client_side_validation and probes is None:  # noqa: E501
             raise ValueError("Invalid value for `probes`, must not be `None`")  # noqa: E501
@@ -463,7 +463,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_alias: The service_alias of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_alias: str
         """
         if self.local_vars_configuration.client_side_validation and service_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `service_alias`, must not be `None`")  # noqa: E501
@@ -486,7 +486,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_cname: The service_cname of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_cname: str
         """
         if self.local_vars_configuration.client_side_validation and service_cname is None:  # noqa: E501
             raise ValueError("Invalid value for `service_cname`, must not be `None`")  # noqa: E501
@@ -509,7 +509,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_connect_info_map_list: The service_connect_info_map_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppEnv]
+        :type service_connect_info_map_list: list[V1StoreAppVersionTempleteAppEnv]
         """
         if self.local_vars_configuration.client_side_validation and service_connect_info_map_list is None:  # noqa: E501
             raise ValueError("Invalid value for `service_connect_info_map_list`, must not be `None`")  # noqa: E501
@@ -532,7 +532,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_env_map_list: The service_env_map_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppEnv]
+        :type service_env_map_list: list[V1StoreAppVersionTempleteAppEnv]
         """
         if self.local_vars_configuration.client_side_validation and service_env_map_list is None:  # noqa: E501
             raise ValueError("Invalid value for `service_env_map_list`, must not be `None`")  # noqa: E501
@@ -555,7 +555,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_id: The service_id of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_id: str
         """
         if self.local_vars_configuration.client_side_validation and service_id is None:  # noqa: E501
             raise ValueError("Invalid value for `service_id`, must not be `None`")  # noqa: E501
@@ -578,7 +578,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_image: The service_image of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: V1ImageInfo
+        :type service_image: V1ImageInfo
         """
         if self.local_vars_configuration.client_side_validation and service_image is None:  # noqa: E501
             raise ValueError("Invalid value for `service_image`, must not be `None`")  # noqa: E501
@@ -601,7 +601,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_key: The service_key of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_key: str
         """
         if self.local_vars_configuration.client_side_validation and service_key is None:  # noqa: E501
             raise ValueError("Invalid value for `service_key`, must not be `None`")  # noqa: E501
@@ -624,7 +624,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_name: The service_name of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_name: str
         """
         if self.local_vars_configuration.client_side_validation and service_name is None:  # noqa: E501
             raise ValueError("Invalid value for `service_name`, must not be `None`")  # noqa: E501
@@ -647,7 +647,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_region: The service_region of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_region: str
         """
         if self.local_vars_configuration.client_side_validation and service_region is None:  # noqa: E501
             raise ValueError("Invalid value for `service_region`, must not be `None`")  # noqa: E501
@@ -670,7 +670,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_related_plugin_config: The service_related_plugin_config of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppPluginConfig]
+        :type service_related_plugin_config: list[V1StoreAppVersionTempleteAppPluginConfig]
         """
 
         self._service_related_plugin_config = service_related_plugin_config
@@ -691,7 +691,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_share_uuid: The service_share_uuid of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_share_uuid: str
         """
 
         self._service_share_uuid = service_share_uuid
@@ -712,7 +712,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_source: The service_source of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_source: str
         """
         if self.local_vars_configuration.client_side_validation and service_source is None:  # noqa: E501
             raise ValueError("Invalid value for `service_source`, must not be `None`")  # noqa: E501
@@ -735,7 +735,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_type: The service_type of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type service_type: str
         """
         if self.local_vars_configuration.client_side_validation and service_type is None:  # noqa: E501
             raise ValueError("Invalid value for `service_type`, must not be `None`")  # noqa: E501
@@ -758,7 +758,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param service_volume_map_list: The service_volume_map_list of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: list[V1StoreAppVersionTempleteAppVolume]
+        :type service_volume_map_list: list[V1StoreAppVersionTempleteAppVolume]
         """
         if self.local_vars_configuration.client_side_validation and service_volume_map_list is None:  # noqa: E501
             raise ValueError("Invalid value for `service_volume_map_list`, must not be `None`")  # noqa: E501
@@ -781,7 +781,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param share_image: The share_image of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type share_image: str
         """
         if self.local_vars_configuration.client_side_validation and share_image is None:  # noqa: E501
             raise ValueError("Invalid value for `share_image`, must not be `None`")  # noqa: E501
@@ -804,7 +804,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param share_type: The share_type of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type share_type: str
         """
 
         self._share_type = share_type
@@ -825,7 +825,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param tenant_id: The tenant_id of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type tenant_id: str
         """
         if self.local_vars_configuration.client_side_validation and tenant_id is None:  # noqa: E501
             raise ValueError("Invalid value for `tenant_id`, must not be `None`")  # noqa: E501
@@ -848,7 +848,7 @@ class V1StoreAppVersionTempleteApp(object):
 
 
         :param version: The version of this V1StoreAppVersionTempleteApp.  # noqa: E501
-        :type: str
+        :type version: str
         """
         if self.local_vars_configuration.client_side_validation and version is None:  # noqa: E501
             raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501

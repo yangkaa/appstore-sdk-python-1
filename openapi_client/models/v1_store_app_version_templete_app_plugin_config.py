@@ -100,7 +100,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param id: The id of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: int
+        :type id: int
         """
         if self.local_vars_configuration.client_side_validation and id is None:  # noqa: E501
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -123,7 +123,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param attr: The attr of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: list[object]
+        :type attr: list[object]
         """
         if self.local_vars_configuration.client_side_validation and attr is None:  # noqa: E501
             raise ValueError("Invalid value for `attr`, must not be `None`")  # noqa: E501
@@ -146,7 +146,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param build_version: The build_version of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type build_version: str
         """
         if self.local_vars_configuration.client_side_validation and build_version is None:  # noqa: E501
             raise ValueError("Invalid value for `build_version`, must not be `None`")  # noqa: E501
@@ -169,7 +169,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param create_time: The create_time of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type create_time: str
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -192,7 +192,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param plugin_id: The plugin_id of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type plugin_id: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_id is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_id`, must not be `None`")  # noqa: E501
@@ -215,7 +215,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param plugin_key: The plugin_key of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type plugin_key: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_key is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_key`, must not be `None`")  # noqa: E501
@@ -238,7 +238,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param plugin_status: The plugin_status of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: bool
+        :type plugin_status: bool
         """
         if self.local_vars_configuration.client_side_validation and plugin_status is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_status`, must not be `None`")  # noqa: E501
@@ -261,7 +261,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param service_id: The service_id of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type service_id: str
         """
         if self.local_vars_configuration.client_side_validation and service_id is None:  # noqa: E501
             raise ValueError("Invalid value for `service_id`, must not be `None`")  # noqa: E501
@@ -284,7 +284,7 @@ class V1StoreAppVersionTempleteAppPluginConfig(object):
 
 
         :param service_meta_type: The service_meta_type of this V1StoreAppVersionTempleteAppPluginConfig.  # noqa: E501
-        :type: str
+        :type service_meta_type: str
         """
         if self.local_vars_configuration.client_side_validation and service_meta_type is None:  # noqa: E501
             raise ValueError("Invalid value for `service_meta_type`, must not be `None`")  # noqa: E501

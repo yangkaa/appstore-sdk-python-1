@@ -72,7 +72,6 @@ class V1AppImageHubInfoResponse(object):
     def hub_password(self):
         """Gets the hub_password of this V1AppImageHubInfoResponse.  # noqa: E501
 
-        仓库密码  # noqa: E501
 
         :return: The hub_password of this V1AppImageHubInfoResponse.  # noqa: E501
         :rtype: str
@@ -83,10 +82,9 @@ class V1AppImageHubInfoResponse(object):
     def hub_password(self, hub_password):
         """Sets the hub_password of this V1AppImageHubInfoResponse.
 
-        仓库密码  # noqa: E501
 
         :param hub_password: The hub_password of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type: str
+        :type hub_password: str
         """
         if self.local_vars_configuration.client_side_validation and hub_password is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_password`, must not be `None`")  # noqa: E501
@@ -97,7 +95,6 @@ class V1AppImageHubInfoResponse(object):
     def hub_url(self):
         """Gets the hub_url of this V1AppImageHubInfoResponse.  # noqa: E501
 
-        镜像仓库地址  # noqa: E501
 
         :return: The hub_url of this V1AppImageHubInfoResponse.  # noqa: E501
         :rtype: str
@@ -108,10 +105,9 @@ class V1AppImageHubInfoResponse(object):
     def hub_url(self, hub_url):
         """Sets the hub_url of this V1AppImageHubInfoResponse.
 
-        镜像仓库地址  # noqa: E501
 
         :param hub_url: The hub_url of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type: str
+        :type hub_url: str
         """
         if self.local_vars_configuration.client_side_validation and hub_url is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_url`, must not be `None`")  # noqa: E501
@@ -122,7 +118,6 @@ class V1AppImageHubInfoResponse(object):
     def hub_user(self):
         """Gets the hub_user of this V1AppImageHubInfoResponse.  # noqa: E501
 
-        仓库用户名  # noqa: E501
 
         :return: The hub_user of this V1AppImageHubInfoResponse.  # noqa: E501
         :rtype: str
@@ -133,10 +128,9 @@ class V1AppImageHubInfoResponse(object):
     def hub_user(self, hub_user):
         """Sets the hub_user of this V1AppImageHubInfoResponse.
 
-        仓库用户名  # noqa: E501
 
         :param hub_user: The hub_user of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type: str
+        :type hub_user: str
         """
         if self.local_vars_configuration.client_side_validation and hub_user is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_user`, must not be `None`")  # noqa: E501
@@ -147,7 +141,6 @@ class V1AppImageHubInfoResponse(object):
     def is_trust(self):
         """Gets the is_trust of this V1AppImageHubInfoResponse.  # noqa: E501
 
-        是否是安全的仓库  # noqa: E501
 
         :return: The is_trust of this V1AppImageHubInfoResponse.  # noqa: E501
         :rtype: bool
@@ -158,10 +151,9 @@ class V1AppImageHubInfoResponse(object):
     def is_trust(self, is_trust):
         """Sets the is_trust of this V1AppImageHubInfoResponse.
 
-        是否是安全的仓库  # noqa: E501
 
         :param is_trust: The is_trust of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type: bool
+        :type is_trust: bool
         """
         if self.local_vars_configuration.client_side_validation and is_trust is None:  # noqa: E501
             raise ValueError("Invalid value for `is_trust`, must not be `None`")  # noqa: E501
@@ -172,7 +164,6 @@ class V1AppImageHubInfoResponse(object):
     def namespace(self):
         """Gets the namespace of this V1AppImageHubInfoResponse.  # noqa: E501
 
-        仓库命名空间  # noqa: E501
 
         :return: The namespace of this V1AppImageHubInfoResponse.  # noqa: E501
         :rtype: str
@@ -183,10 +174,9 @@ class V1AppImageHubInfoResponse(object):
     def namespace(self, namespace):
         """Sets the namespace of this V1AppImageHubInfoResponse.
 
-        仓库命名空间  # noqa: E501
 
         :param namespace: The namespace of this V1AppImageHubInfoResponse.  # noqa: E501
-        :type: str
+        :type namespace: str
         """
         if self.local_vars_configuration.client_side_validation and namespace is None:  # noqa: E501
             raise ValueError("Invalid value for `namespace`, must not be `None`")  # noqa: E501

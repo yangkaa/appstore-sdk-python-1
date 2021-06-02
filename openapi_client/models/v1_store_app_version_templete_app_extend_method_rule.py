@@ -92,7 +92,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param is_restart: The is_restart of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type is_restart: int
         """
         if self.local_vars_configuration.client_side_validation and is_restart is None:  # noqa: E501
             raise ValueError("Invalid value for `is_restart`, must not be `None`")  # noqa: E501
@@ -115,7 +115,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param max_memory: The max_memory of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type max_memory: int
         """
         if self.local_vars_configuration.client_side_validation and max_memory is None:  # noqa: E501
             raise ValueError("Invalid value for `max_memory`, must not be `None`")  # noqa: E501
@@ -138,7 +138,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param max_node: The max_node of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type max_node: int
         """
         if self.local_vars_configuration.client_side_validation and max_node is None:  # noqa: E501
             raise ValueError("Invalid value for `max_node`, must not be `None`")  # noqa: E501
@@ -161,7 +161,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param min_memory: The min_memory of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type min_memory: int
         """
         if self.local_vars_configuration.client_side_validation and min_memory is None:  # noqa: E501
             raise ValueError("Invalid value for `min_memory`, must not be `None`")  # noqa: E501
@@ -184,7 +184,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param min_node: The min_node of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type min_node: int
         """
         if self.local_vars_configuration.client_side_validation and min_node is None:  # noqa: E501
             raise ValueError("Invalid value for `min_node`, must not be `None`")  # noqa: E501
@@ -207,7 +207,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param step_memory: The step_memory of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type step_memory: int
         """
         if self.local_vars_configuration.client_side_validation and step_memory is None:  # noqa: E501
             raise ValueError("Invalid value for `step_memory`, must not be `None`")  # noqa: E501
@@ -230,7 +230,7 @@ class V1StoreAppVersionTempleteAppExtendMethodRule(object):
 
 
         :param step_node: The step_node of this V1StoreAppVersionTempleteAppExtendMethodRule.  # noqa: E501
-        :type: int
+        :type step_node: int
         """
         if self.local_vars_configuration.client_side_validation and step_node is None:  # noqa: E501
             raise ValueError("Invalid value for `step_node`, must not be `None`")  # noqa: E501

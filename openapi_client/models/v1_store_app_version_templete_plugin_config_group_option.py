@@ -108,7 +108,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param id: The id of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: int
+        :type id: int
         """
         if self.local_vars_configuration.client_side_validation and id is None:  # noqa: E501
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -131,7 +131,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param attr_alt_value: The attr_alt_value of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type attr_alt_value: str
         """
         if self.local_vars_configuration.client_side_validation and attr_alt_value is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_alt_value`, must not be `None`")  # noqa: E501
@@ -154,7 +154,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param attr_default_value: The attr_default_value of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type attr_default_value: str
         """
         if self.local_vars_configuration.client_side_validation and attr_default_value is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_default_value`, must not be `None`")  # noqa: E501
@@ -177,7 +177,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param attr_info: The attr_info of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type attr_info: str
         """
         if self.local_vars_configuration.client_side_validation and attr_info is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_info`, must not be `None`")  # noqa: E501
@@ -200,7 +200,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param attr_name: The attr_name of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type attr_name: str
         """
         if self.local_vars_configuration.client_side_validation and attr_name is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_name`, must not be `None`")  # noqa: E501
@@ -223,7 +223,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param attr_type: The attr_type of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type attr_type: str
         """
         if self.local_vars_configuration.client_side_validation and attr_type is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_type`, must not be `None`")  # noqa: E501
@@ -246,7 +246,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param build_version: The build_version of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type build_version: str
         """
         if self.local_vars_configuration.client_side_validation and build_version is None:  # noqa: E501
             raise ValueError("Invalid value for `build_version`, must not be `None`")  # noqa: E501
@@ -269,7 +269,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param is_change: The is_change of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: bool
+        :type is_change: bool
         """
         if self.local_vars_configuration.client_side_validation and is_change is None:  # noqa: E501
             raise ValueError("Invalid value for `is_change`, must not be `None`")  # noqa: E501
@@ -292,7 +292,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param plugin_id: The plugin_id of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type plugin_id: str
         """
         if self.local_vars_configuration.client_side_validation and plugin_id is None:  # noqa: E501
             raise ValueError("Invalid value for `plugin_id`, must not be `None`")  # noqa: E501
@@ -315,7 +315,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param protocol: The protocol of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type protocol: str
         """
         if self.local_vars_configuration.client_side_validation and protocol is None:  # noqa: E501
             raise ValueError("Invalid value for `protocol`, must not be `None`")  # noqa: E501
@@ -338,7 +338,7 @@ class V1StoreAppVersionTempletePluginConfigGroupOption(object):
 
 
         :param service_meta_type: The service_meta_type of this V1StoreAppVersionTempletePluginConfigGroupOption.  # noqa: E501
-        :type: str
+        :type service_meta_type: str
         """
         if self.local_vars_configuration.client_side_validation and service_meta_type is None:  # noqa: E501
             raise ValueError("Invalid value for `service_meta_type`, must not be `None`")  # noqa: E501

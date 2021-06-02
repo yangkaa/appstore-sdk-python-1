@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**apps** | [**list[V1AppBaseInfo]**](V1AppBaseInfo.md) | 应用列表 | 
+**apps** | [**list[V1AppBaseInfo]**](V1AppBaseInfo.md) |  | 
 **page** | **int** |  | 
 **page_size** | **int** |  | 
 **total** | **int** |  | 

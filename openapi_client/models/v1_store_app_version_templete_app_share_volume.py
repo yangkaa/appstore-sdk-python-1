@@ -76,7 +76,7 @@ class V1StoreAppVersionTempleteAppShareVolume(object):
 
 
         :param mnt_dir: The mnt_dir of this V1StoreAppVersionTempleteAppShareVolume.  # noqa: E501
-        :type: str
+        :type mnt_dir: str
         """
         if self.local_vars_configuration.client_side_validation and mnt_dir is None:  # noqa: E501
             raise ValueError("Invalid value for `mnt_dir`, must not be `None`")  # noqa: E501
@@ -99,7 +99,7 @@ class V1StoreAppVersionTempleteAppShareVolume(object):
 
 
         :param mnt_name: The mnt_name of this V1StoreAppVersionTempleteAppShareVolume.  # noqa: E501
-        :type: str
+        :type mnt_name: str
         """
         if self.local_vars_configuration.client_side_validation and mnt_name is None:  # noqa: E501
             raise ValueError("Invalid value for `mnt_name`, must not be `None`")  # noqa: E501
@@ -122,7 +122,7 @@ class V1StoreAppVersionTempleteAppShareVolume(object):
 
 
         :param service_share_uuid: The service_share_uuid of this V1StoreAppVersionTempleteAppShareVolume.  # noqa: E501
-        :type: str
+        :type service_share_uuid: str
         """
         if self.local_vars_configuration.client_side_validation and service_share_uuid is None:  # noqa: E501
             raise ValueError("Invalid value for `service_share_uuid`, must not be `None`")  # noqa: E501

@@ -70,13 +70,13 @@ class V1MarketInfoResponse(object):
         self.description = description
         self.name = name
         self.status = status
-        self.version = version
+        if version is not None:
+            self.version = version
 
     @property
     def access_actions(self):
         """Gets the access_actions of this V1MarketInfoResponse.  # noqa: E501
 
-        访问权限列表  # noqa: E501
 
         :return: The access_actions of this V1MarketInfoResponse.  # noqa: E501
         :rtype: list[str]
@@ -87,10 +87,9 @@ class V1MarketInfoResponse(object):
     def access_actions(self, access_actions):
         """Sets the access_actions of this V1MarketInfoResponse.
 
-        访问权限列表  # noqa: E501
 
         :param access_actions: The access_actions of this V1MarketInfoResponse.  # noqa: E501
-        :type: list[str]
+        :type access_actions: list[str]
         """
         if self.local_vars_configuration.client_side_validation and access_actions is None:  # noqa: E501
             raise ValueError("Invalid value for `access_actions`, must not be `None`")  # noqa: E501
@@ -101,7 +100,6 @@ class V1MarketInfoResponse(object):
     def create_time(self):
         """Gets the create_time of this V1MarketInfoResponse.  # noqa: E501
 
-        创建时间  # noqa: E501
 
         :return: The create_time of this V1MarketInfoResponse.  # noqa: E501
         :rtype: datetime
@@ -112,10 +110,9 @@ class V1MarketInfoResponse(object):
     def create_time(self, create_time):
         """Sets the create_time of this V1MarketInfoResponse.
 
-        创建时间  # noqa: E501
 
         :param create_time: The create_time of this V1MarketInfoResponse.  # noqa: E501
-        :type: datetime
+        :type create_time: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -126,7 +123,6 @@ class V1MarketInfoResponse(object):
     def description(self):
         """Gets the description of this V1MarketInfoResponse.  # noqa: E501
 
-        说明  # noqa: E501
 
         :return: The description of this V1MarketInfoResponse.  # noqa: E501
         :rtype: str
@@ -137,10 +133,9 @@ class V1MarketInfoResponse(object):
     def description(self, description):
         """Sets the description of this V1MarketInfoResponse.
 
-        说明  # noqa: E501
 
         :param description: The description of this V1MarketInfoResponse.  # noqa: E501
-        :type: str
+        :type description: str
         """
         if self.local_vars_configuration.client_side_validation and description is None:  # noqa: E501
             raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
@@ -151,7 +146,6 @@ class V1MarketInfoResponse(object):
     def name(self):
         """Gets the name of this V1MarketInfoResponse.  # noqa: E501
 
-        名称  # noqa: E501
 
         :return: The name of this V1MarketInfoResponse.  # noqa: E501
         :rtype: str
@@ -162,10 +156,9 @@ class V1MarketInfoResponse(object):
     def name(self, name):
         """Sets the name of this V1MarketInfoResponse.
 
-        名称  # noqa: E501
 
         :param name: The name of this V1MarketInfoResponse.  # noqa: E501
-        :type: str
+        :type name: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
@@ -176,7 +169,6 @@ class V1MarketInfoResponse(object):
     def status(self):
         """Gets the status of this V1MarketInfoResponse.  # noqa: E501
 
-        状态  # noqa: E501
 
         :return: The status of this V1MarketInfoResponse.  # noqa: E501
         :rtype: int
@@ -187,10 +179,9 @@ class V1MarketInfoResponse(object):
     def status(self, status):
         """Sets the status of this V1MarketInfoResponse.
 
-        状态  # noqa: E501
 
         :param status: The status of this V1MarketInfoResponse.  # noqa: E501
-        :type: int
+        :type status: int
         """
         if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
@@ -215,10 +206,8 @@ class V1MarketInfoResponse(object):
         当前SAAS版本  # noqa: E501
 
         :param version: The version of this V1MarketInfoResponse.  # noqa: E501
-        :type: str
+        :type version: str
         """
-        if self.local_vars_configuration.client_side_validation and version is None:  # noqa: E501
-            raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
 
         self._version = version
 

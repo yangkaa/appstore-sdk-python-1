@@ -84,7 +84,7 @@ class V1ImageInfo(object):
 
 
         :param hub_password: The hub_password of this V1ImageInfo.  # noqa: E501
-        :type: str
+        :type hub_password: str
         """
         if self.local_vars_configuration.client_side_validation and hub_password is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_password`, must not be `None`")  # noqa: E501
@@ -107,7 +107,7 @@ class V1ImageInfo(object):
 
 
         :param hub_url: The hub_url of this V1ImageInfo.  # noqa: E501
-        :type: str
+        :type hub_url: str
         """
         if self.local_vars_configuration.client_side_validation and hub_url is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_url`, must not be `None`")  # noqa: E501
@@ -130,7 +130,7 @@ class V1ImageInfo(object):
 
 
         :param hub_user: The hub_user of this V1ImageInfo.  # noqa: E501
-        :type: str
+        :type hub_user: str
         """
         if self.local_vars_configuration.client_side_validation and hub_user is None:  # noqa: E501
             raise ValueError("Invalid value for `hub_user`, must not be `None`")  # noqa: E501
@@ -153,7 +153,7 @@ class V1ImageInfo(object):
 
 
         :param is_trust: The is_trust of this V1ImageInfo.  # noqa: E501
-        :type: bool
+        :type is_trust: bool
         """
         if self.local_vars_configuration.client_side_validation and is_trust is None:  # noqa: E501
             raise ValueError("Invalid value for `is_trust`, must not be `None`")  # noqa: E501
@@ -176,7 +176,7 @@ class V1ImageInfo(object):
 
 
         :param namespace: The namespace of this V1ImageInfo.  # noqa: E501
-        :type: str
+        :type namespace: str
         """
         if self.local_vars_configuration.client_side_validation and namespace is None:  # noqa: E501
             raise ValueError("Invalid value for `namespace`, must not be `None`")  # noqa: E501

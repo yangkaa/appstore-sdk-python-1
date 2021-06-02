@@ -140,7 +140,6 @@ class V1AppBaseInfo(object):
     def app_detail_url(self):
         """Gets the app_detail_url of this V1AppBaseInfo.  # noqa: E501
 
-        应用详情 URL  # noqa: E501
 
         :return: The app_detail_url of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -151,10 +150,9 @@ class V1AppBaseInfo(object):
     def app_detail_url(self, app_detail_url):
         """Sets the app_detail_url of this V1AppBaseInfo.
 
-        应用详情 URL  # noqa: E501
 
         :param app_detail_url: The app_detail_url of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type app_detail_url: str
         """
         if self.local_vars_configuration.client_side_validation and app_detail_url is None:  # noqa: E501
             raise ValueError("Invalid value for `app_detail_url`, must not be `None`")  # noqa: E501
@@ -165,7 +163,6 @@ class V1AppBaseInfo(object):
     def app_key_id(self):
         """Gets the app_key_id of this V1AppBaseInfo.  # noqa: E501
 
-        应用 ID  # noqa: E501
 
         :return: The app_key_id of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -176,10 +173,9 @@ class V1AppBaseInfo(object):
     def app_key_id(self, app_key_id):
         """Sets the app_key_id of this V1AppBaseInfo.
 
-        应用 ID  # noqa: E501
 
         :param app_key_id: The app_key_id of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type app_key_id: str
         """
         if self.local_vars_configuration.client_side_validation and app_key_id is None:  # noqa: E501
             raise ValueError("Invalid value for `app_key_id`, must not be `None`")  # noqa: E501
@@ -190,7 +186,6 @@ class V1AppBaseInfo(object):
     def create_time(self):
         """Gets the create_time of this V1AppBaseInfo.  # noqa: E501
 
-        创建时间  # noqa: E501
 
         :return: The create_time of this V1AppBaseInfo.  # noqa: E501
         :rtype: datetime
@@ -201,10 +196,9 @@ class V1AppBaseInfo(object):
     def create_time(self, create_time):
         """Sets the create_time of this V1AppBaseInfo.
 
-        创建时间  # noqa: E501
 
         :param create_time: The create_time of this V1AppBaseInfo.  # noqa: E501
-        :type: datetime
+        :type create_time: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -215,7 +209,6 @@ class V1AppBaseInfo(object):
     def desc(self):
         """Gets the desc of this V1AppBaseInfo.  # noqa: E501
 
-        应用描述  # noqa: E501
 
         :return: The desc of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -226,10 +219,9 @@ class V1AppBaseInfo(object):
     def desc(self, desc):
         """Sets the desc of this V1AppBaseInfo.
 
-        应用描述  # noqa: E501
 
         :param desc: The desc of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type desc: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -240,7 +232,6 @@ class V1AppBaseInfo(object):
     def dev_status(self):
         """Gets the dev_status of this V1AppBaseInfo.  # noqa: E501
 
-        开发状态  # noqa: E501
 
         :return: The dev_status of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -251,10 +242,9 @@ class V1AppBaseInfo(object):
     def dev_status(self, dev_status):
         """Sets the dev_status of this V1AppBaseInfo.
 
-        开发状态  # noqa: E501
 
         :param dev_status: The dev_status of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type dev_status: str
         """
         if self.local_vars_configuration.client_side_validation and dev_status is None:  # noqa: E501
             raise ValueError("Invalid value for `dev_status`, must not be `None`")  # noqa: E501
@@ -265,7 +255,6 @@ class V1AppBaseInfo(object):
     def download_count(self):
         """Gets the download_count of this V1AppBaseInfo.  # noqa: E501
 
-        下载次数  # noqa: E501
 
         :return: The download_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -276,10 +265,9 @@ class V1AppBaseInfo(object):
     def download_count(self, download_count):
         """Sets the download_count of this V1AppBaseInfo.
 
-        下载次数  # noqa: E501
 
         :param download_count: The download_count of this V1AppBaseInfo.  # noqa: E501
-        :type: int
+        :type download_count: int
         """
         if self.local_vars_configuration.client_side_validation and download_count is None:  # noqa: E501
             raise ValueError("Invalid value for `download_count`, must not be `None`")  # noqa: E501
@@ -290,7 +278,6 @@ class V1AppBaseInfo(object):
     def install_count(self):
         """Gets the install_count of this V1AppBaseInfo.  # noqa: E501
 
-        安装次数  # noqa: E501
 
         :return: The install_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -301,10 +288,9 @@ class V1AppBaseInfo(object):
     def install_count(self, install_count):
         """Sets the install_count of this V1AppBaseInfo.
 
-        安装次数  # noqa: E501
 
         :param install_count: The install_count of this V1AppBaseInfo.  # noqa: E501
-        :type: int
+        :type install_count: int
         """
         if self.local_vars_configuration.client_side_validation and install_count is None:  # noqa: E501
             raise ValueError("Invalid value for `install_count`, must not be `None`")  # noqa: E501
@@ -315,7 +301,6 @@ class V1AppBaseInfo(object):
     def introduction(self):
         """Gets the introduction of this V1AppBaseInfo.  # noqa: E501
 
-        应用介绍  # noqa: E501
 
         :return: The introduction of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -326,10 +311,9 @@ class V1AppBaseInfo(object):
     def introduction(self, introduction):
         """Sets the introduction of this V1AppBaseInfo.
 
-        应用介绍  # noqa: E501
 
         :param introduction: The introduction of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type introduction: str
         """
         if self.local_vars_configuration.client_side_validation and introduction is None:  # noqa: E501
             raise ValueError("Invalid value for `introduction`, must not be `None`")  # noqa: E501
@@ -340,7 +324,6 @@ class V1AppBaseInfo(object):
     def introduction_html(self):
         """Gets the introduction_html of this V1AppBaseInfo.  # noqa: E501
 
-        应用介绍  # noqa: E501
 
         :return: The introduction_html of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -351,10 +334,9 @@ class V1AppBaseInfo(object):
     def introduction_html(self, introduction_html):
         """Sets the introduction_html of this V1AppBaseInfo.
 
-        应用介绍  # noqa: E501
 
         :param introduction_html: The introduction_html of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type introduction_html: str
         """
         if self.local_vars_configuration.client_side_validation and introduction_html is None:  # noqa: E501
             raise ValueError("Invalid value for `introduction_html`, must not be `None`")  # noqa: E501
@@ -365,7 +347,6 @@ class V1AppBaseInfo(object):
     def is_official(self):
         """Gets the is_official of this V1AppBaseInfo.  # noqa: E501
 
-        是否是官方应用  # noqa: E501
 
         :return: The is_official of this V1AppBaseInfo.  # noqa: E501
         :rtype: bool
@@ -376,10 +357,9 @@ class V1AppBaseInfo(object):
     def is_official(self, is_official):
         """Sets the is_official of this V1AppBaseInfo.
 
-        是否是官方应用  # noqa: E501
 
         :param is_official: The is_official of this V1AppBaseInfo.  # noqa: E501
-        :type: bool
+        :type is_official: bool
         """
         if self.local_vars_configuration.client_side_validation and is_official is None:  # noqa: E501
             raise ValueError("Invalid value for `is_official`, must not be `None`")  # noqa: E501
@@ -390,7 +370,6 @@ class V1AppBaseInfo(object):
     def logo(self):
         """Gets the logo of this V1AppBaseInfo.  # noqa: E501
 
-        Logo  # noqa: E501
 
         :return: The logo of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -401,10 +380,9 @@ class V1AppBaseInfo(object):
     def logo(self, logo):
         """Sets the logo of this V1AppBaseInfo.
 
-        Logo  # noqa: E501
 
         :param logo: The logo of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type logo: str
         """
         if self.local_vars_configuration.client_side_validation and logo is None:  # noqa: E501
             raise ValueError("Invalid value for `logo`, must not be `None`")  # noqa: E501
@@ -415,7 +393,6 @@ class V1AppBaseInfo(object):
     def market_id(self):
         """Gets the market_id of this V1AppBaseInfo.  # noqa: E501
 
-        商店 ID  # noqa: E501
 
         :return: The market_id of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -426,10 +403,9 @@ class V1AppBaseInfo(object):
     def market_id(self, market_id):
         """Sets the market_id of this V1AppBaseInfo.
 
-        商店 ID  # noqa: E501
 
         :param market_id: The market_id of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type market_id: str
         """
         if self.local_vars_configuration.client_side_validation and market_id is None:  # noqa: E501
             raise ValueError("Invalid value for `market_id`, must not be `None`")  # noqa: E501
@@ -440,7 +416,6 @@ class V1AppBaseInfo(object):
     def market_name(self):
         """Gets the market_name of this V1AppBaseInfo.  # noqa: E501
 
-        商店名称  # noqa: E501
 
         :return: The market_name of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -451,10 +426,9 @@ class V1AppBaseInfo(object):
     def market_name(self, market_name):
         """Sets the market_name of this V1AppBaseInfo.
 
-        商店名称  # noqa: E501
 
         :param market_name: The market_name of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type market_name: str
         """
         if self.local_vars_configuration.client_side_validation and market_name is None:  # noqa: E501
             raise ValueError("Invalid value for `market_name`, must not be `None`")  # noqa: E501
@@ -465,7 +439,6 @@ class V1AppBaseInfo(object):
     def market_url(self):
         """Gets the market_url of this V1AppBaseInfo.  # noqa: E501
 
-        商店 URL  # noqa: E501
 
         :return: The market_url of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -476,10 +449,9 @@ class V1AppBaseInfo(object):
     def market_url(self, market_url):
         """Sets the market_url of this V1AppBaseInfo.
 
-        商店 URL  # noqa: E501
 
         :param market_url: The market_url of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type market_url: str
         """
         if self.local_vars_configuration.client_side_validation and market_url is None:  # noqa: E501
             raise ValueError("Invalid value for `market_url`, must not be `None`")  # noqa: E501
@@ -490,7 +462,6 @@ class V1AppBaseInfo(object):
     def name(self):
         """Gets the name of this V1AppBaseInfo.  # noqa: E501
 
-        应用名称  # noqa: E501
 
         :return: The name of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -501,10 +472,9 @@ class V1AppBaseInfo(object):
     def name(self, name):
         """Sets the name of this V1AppBaseInfo.
 
-        应用名称  # noqa: E501
 
         :param name: The name of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type name: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
@@ -515,7 +485,6 @@ class V1AppBaseInfo(object):
     def publish_type(self):
         """Gets the publish_type of this V1AppBaseInfo.  # noqa: E501
 
-        发布类型. private: 私有; public: 公有  # noqa: E501
 
         :return: The publish_type of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -526,10 +495,9 @@ class V1AppBaseInfo(object):
     def publish_type(self, publish_type):
         """Sets the publish_type of this V1AppBaseInfo.
 
-        发布类型. private: 私有; public: 公有  # noqa: E501
 
         :param publish_type: The publish_type of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type publish_type: str
         """
         if self.local_vars_configuration.client_side_validation and publish_type is None:  # noqa: E501
             raise ValueError("Invalid value for `publish_type`, must not be `None`")  # noqa: E501
@@ -540,7 +508,6 @@ class V1AppBaseInfo(object):
     def show_count(self):
         """Gets the show_count of this V1AppBaseInfo.  # noqa: E501
 
-        访问次数  # noqa: E501
 
         :return: The show_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -551,10 +518,9 @@ class V1AppBaseInfo(object):
     def show_count(self, show_count):
         """Sets the show_count of this V1AppBaseInfo.
 
-        访问次数  # noqa: E501
 
         :param show_count: The show_count of this V1AppBaseInfo.  # noqa: E501
-        :type: int
+        :type show_count: int
         """
         if self.local_vars_configuration.client_side_validation and show_count is None:  # noqa: E501
             raise ValueError("Invalid value for `show_count`, must not be `None`")  # noqa: E501
@@ -577,7 +543,7 @@ class V1AppBaseInfo(object):
 
 
         :param start_count: The start_count of this V1AppBaseInfo.  # noqa: E501
-        :type: int
+        :type start_count: int
         """
         if self.local_vars_configuration.client_side_validation and start_count is None:  # noqa: E501
             raise ValueError("Invalid value for `start_count`, must not be `None`")  # noqa: E501
@@ -588,7 +554,6 @@ class V1AppBaseInfo(object):
     def status(self):
         """Gets the status of this V1AppBaseInfo.  # noqa: E501
 
-        状态  # noqa: E501
 
         :return: The status of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -599,10 +564,9 @@ class V1AppBaseInfo(object):
     def status(self, status):
         """Sets the status of this V1AppBaseInfo.
 
-        状态  # noqa: E501
 
         :param status: The status of this V1AppBaseInfo.  # noqa: E501
-        :type: str
+        :type status: str
         """
         if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
@@ -613,7 +577,6 @@ class V1AppBaseInfo(object):
     def tags(self):
         """Gets the tags of this V1AppBaseInfo.  # noqa: E501
 
-        标签列表  # noqa: E501
 
         :return: The tags of this V1AppBaseInfo.  # noqa: E501
         :rtype: list[str]
@@ -624,10 +587,9 @@ class V1AppBaseInfo(object):
     def tags(self, tags):
         """Sets the tags of this V1AppBaseInfo.
 
-        标签列表  # noqa: E501
 
         :param tags: The tags of this V1AppBaseInfo.  # noqa: E501
-        :type: list[str]
+        :type tags: list[str]
         """
         if self.local_vars_configuration.client_side_validation and tags is None:  # noqa: E501
             raise ValueError("Invalid value for `tags`, must not be `None`")  # noqa: E501
@@ -650,7 +612,7 @@ class V1AppBaseInfo(object):
 
 
         :param update_time: The update_time of this V1AppBaseInfo.  # noqa: E501
-        :type: datetime
+        :type update_time: datetime
         """
         if self.local_vars_configuration.client_side_validation and update_time is None:  # noqa: E501
             raise ValueError("Invalid value for `update_time`, must not be `None`")  # noqa: E501
@@ -661,7 +623,6 @@ class V1AppBaseInfo(object):
     def versions(self):
         """Gets the versions of this V1AppBaseInfo.  # noqa: E501
 
-        版本列表  # noqa: E501
 
         :return: The versions of this V1AppBaseInfo.  # noqa: E501
         :rtype: list[V1AppVersionBase]
@@ -672,10 +633,9 @@ class V1AppBaseInfo(object):
     def versions(self, versions):
         """Sets the versions of this V1AppBaseInfo.
 
-        版本列表  # noqa: E501
 
         :param versions: The versions of this V1AppBaseInfo.  # noqa: E501
-        :type: list[V1AppVersionBase]
+        :type versions: list[V1AppVersionBase]
         """
         if self.local_vars_configuration.client_side_validation and versions is None:  # noqa: E501
             raise ValueError("Invalid value for `versions`, must not be `None`")  # noqa: E501

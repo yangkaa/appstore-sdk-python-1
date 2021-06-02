@@ -92,7 +92,6 @@ class V1AppVersionBase(object):
     def app_key_id(self):
         """Gets the app_key_id of this V1AppVersionBase.  # noqa: E501
 
-        应用 ID  # noqa: E501
 
         :return: The app_key_id of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -103,10 +102,9 @@ class V1AppVersionBase(object):
     def app_key_id(self, app_key_id):
         """Sets the app_key_id of this V1AppVersionBase.
 
-        应用 ID  # noqa: E501
 
         :param app_key_id: The app_key_id of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type app_key_id: str
         """
         if self.local_vars_configuration.client_side_validation and app_key_id is None:  # noqa: E501
             raise ValueError("Invalid value for `app_key_id`, must not be `None`")  # noqa: E501
@@ -117,7 +115,6 @@ class V1AppVersionBase(object):
     def app_version(self):
         """Gets the app_version of this V1AppVersionBase.  # noqa: E501
 
-        应用版本  # noqa: E501
 
         :return: The app_version of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -128,10 +125,9 @@ class V1AppVersionBase(object):
     def app_version(self, app_version):
         """Sets the app_version of this V1AppVersionBase.
 
-        应用版本  # noqa: E501
 
         :param app_version: The app_version of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type app_version: str
         """
         if self.local_vars_configuration.client_side_validation and app_version is None:  # noqa: E501
             raise ValueError("Invalid value for `app_version`, must not be `None`")  # noqa: E501
@@ -142,7 +138,6 @@ class V1AppVersionBase(object):
     def app_version_alias(self):
         """Gets the app_version_alias of this V1AppVersionBase.  # noqa: E501
 
-        版本别名  # noqa: E501
 
         :return: The app_version_alias of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -153,10 +148,9 @@ class V1AppVersionBase(object):
     def app_version_alias(self, app_version_alias):
         """Sets the app_version_alias of this V1AppVersionBase.
 
-        版本别名  # noqa: E501
 
         :param app_version_alias: The app_version_alias of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type app_version_alias: str
         """
         if self.local_vars_configuration.client_side_validation and app_version_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `app_version_alias`, must not be `None`")  # noqa: E501
@@ -167,7 +161,6 @@ class V1AppVersionBase(object):
     def create_time(self):
         """Gets the create_time of this V1AppVersionBase.  # noqa: E501
 
-        创建时间  # noqa: E501
 
         :return: The create_time of this V1AppVersionBase.  # noqa: E501
         :rtype: datetime
@@ -178,10 +171,9 @@ class V1AppVersionBase(object):
     def create_time(self, create_time):
         """Sets the create_time of this V1AppVersionBase.
 
-        创建时间  # noqa: E501
 
         :param create_time: The create_time of this V1AppVersionBase.  # noqa: E501
-        :type: datetime
+        :type create_time: datetime
         """
         if self.local_vars_configuration.client_side_validation and create_time is None:  # noqa: E501
             raise ValueError("Invalid value for `create_time`, must not be `None`")  # noqa: E501
@@ -192,7 +184,6 @@ class V1AppVersionBase(object):
     def delivery_mode(self):
         """Gets the delivery_mode of this V1AppVersionBase.  # noqa: E501
 
-        交付模式  # noqa: E501
 
         :return: The delivery_mode of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -203,10 +194,9 @@ class V1AppVersionBase(object):
     def delivery_mode(self, delivery_mode):
         """Sets the delivery_mode of this V1AppVersionBase.
 
-        交付模式  # noqa: E501
 
         :param delivery_mode: The delivery_mode of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type delivery_mode: str
         """
         if self.local_vars_configuration.client_side_validation and delivery_mode is None:  # noqa: E501
             raise ValueError("Invalid value for `delivery_mode`, must not be `None`")  # noqa: E501
@@ -217,7 +207,6 @@ class V1AppVersionBase(object):
     def desc(self):
         """Gets the desc of this V1AppVersionBase.  # noqa: E501
 
-        描述  # noqa: E501
 
         :return: The desc of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -228,10 +217,9 @@ class V1AppVersionBase(object):
     def desc(self, desc):
         """Sets the desc of this V1AppVersionBase.
 
-        描述  # noqa: E501
 
         :param desc: The desc of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type desc: str
         """
         if self.local_vars_configuration.client_side_validation and desc is None:  # noqa: E501
             raise ValueError("Invalid value for `desc`, must not be `None`")  # noqa: E501
@@ -242,7 +230,6 @@ class V1AppVersionBase(object):
     def enable(self):
         """Gets the enable of this V1AppVersionBase.  # noqa: E501
 
-        开启  # noqa: E501
 
         :return: The enable of this V1AppVersionBase.  # noqa: E501
         :rtype: bool
@@ -253,10 +240,9 @@ class V1AppVersionBase(object):
     def enable(self, enable):
         """Sets the enable of this V1AppVersionBase.
 
-        开启  # noqa: E501
 
         :param enable: The enable of this V1AppVersionBase.  # noqa: E501
-        :type: bool
+        :type enable: bool
         """
         if self.local_vars_configuration.client_side_validation and enable is None:  # noqa: E501
             raise ValueError("Invalid value for `enable`, must not be `None`")  # noqa: E501
@@ -267,7 +253,6 @@ class V1AppVersionBase(object):
     def rainbond_version(self):
         """Gets the rainbond_version of this V1AppVersionBase.  # noqa: E501
 
-        rianbond 版本  # noqa: E501
 
         :return: The rainbond_version of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -278,10 +263,9 @@ class V1AppVersionBase(object):
     def rainbond_version(self, rainbond_version):
         """Sets the rainbond_version of this V1AppVersionBase.
 
-        rianbond 版本  # noqa: E501
 
         :param rainbond_version: The rainbond_version of this V1AppVersionBase.  # noqa: E501
-        :type: str
+        :type rainbond_version: str
         """
         if self.local_vars_configuration.client_side_validation and rainbond_version is None:  # noqa: E501
             raise ValueError("Invalid value for `rainbond_version`, must not be `None`")  # noqa: E501
@@ -304,7 +288,7 @@ class V1AppVersionBase(object):
 
 
         :param update_time: The update_time of this V1AppVersionBase.  # noqa: E501
-        :type: datetime
+        :type update_time: datetime
         """
         if self.local_vars_configuration.client_side_validation and update_time is None:  # noqa: E501
             raise ValueError("Invalid value for `update_time`, must not be `None`")  # noqa: E501
@@ -315,7 +299,6 @@ class V1AppVersionBase(object):
     def update_version(self):
         """Gets the update_version of this V1AppVersionBase.  # noqa: E501
 
-        升级版本  # noqa: E501
 
         :return: The update_version of this V1AppVersionBase.  # noqa: E501
         :rtype: int
@@ -326,10 +309,9 @@ class V1AppVersionBase(object):
     def update_version(self, update_version):
         """Sets the update_version of this V1AppVersionBase.
 
-        升级版本  # noqa: E501
 
         :param update_version: The update_version of this V1AppVersionBase.  # noqa: E501
-        :type: int
+        :type update_version: int
         """
         if self.local_vars_configuration.client_side_validation and update_version is None:  # noqa: E501
             raise ValueError("Invalid value for `update_version`, must not be `None`")  # noqa: E501

@@ -80,7 +80,7 @@ class V1StoreAppVersionTempleteAppEnv(object):
 
 
         :param attr_name: The attr_name of this V1StoreAppVersionTempleteAppEnv.  # noqa: E501
-        :type: str
+        :type attr_name: str
         """
         if self.local_vars_configuration.client_side_validation and attr_name is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_name`, must not be `None`")  # noqa: E501
@@ -103,7 +103,7 @@ class V1StoreAppVersionTempleteAppEnv(object):
 
 
         :param attr_value: The attr_value of this V1StoreAppVersionTempleteAppEnv.  # noqa: E501
-        :type: str
+        :type attr_value: str
         """
         if self.local_vars_configuration.client_side_validation and attr_value is None:  # noqa: E501
             raise ValueError("Invalid value for `attr_value`, must not be `None`")  # noqa: E501
@@ -126,7 +126,7 @@ class V1StoreAppVersionTempleteAppEnv(object):
 
 
         :param is_change: The is_change of this V1StoreAppVersionTempleteAppEnv.  # noqa: E501
-        :type: bool
+        :type is_change: bool
         """
         if self.local_vars_configuration.client_side_validation and is_change is None:  # noqa: E501
             raise ValueError("Invalid value for `is_change`, must not be `None`")  # noqa: E501
@@ -149,7 +149,7 @@ class V1StoreAppVersionTempleteAppEnv(object):
 
 
         :param name: The name of this V1StoreAppVersionTempleteAppEnv.  # noqa: E501
-        :type: str
+        :type name: str
         """
         if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501

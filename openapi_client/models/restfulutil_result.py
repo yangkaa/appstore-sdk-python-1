@@ -72,7 +72,7 @@ class RestfulutilResult(object):
 
 
         :param code: The code of this RestfulutilResult.  # noqa: E501
-        :type: int
+        :type code: int
         """
         if self.local_vars_configuration.client_side_validation and code is None:  # noqa: E501
             raise ValueError("Invalid value for `code`, must not be `None`")  # noqa: E501
@@ -95,7 +95,7 @@ class RestfulutilResult(object):
 
 
         :param msg: The msg of this RestfulutilResult.  # noqa: E501
-        :type: str
+        :type msg: str
         """
         if self.local_vars_configuration.client_side_validation and msg is None:  # noqa: E501
             raise ValueError("Invalid value for `msg`, must not be `None`")  # noqa: E501

@@ -3,20 +3,20 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**app_key_id** | **str** | 应用ID | 
-**app_name** | **str** | 应用名称 | 
+**app_key_id** | **str** |  | 
+**app_name** | **str** |  | 
 **create_time** | **datetime** |  | 
-**delivery_mode** | **str** | 交付类型 | 
-**description** | **str** | 描述 | 
-**enable** | **bool** | 是否开启 | 
-**market_id** | **str** | 商店 ID | 
-**rainbond_version** | **str** | rainbond 版本 | 
-**template** | **str** | 模板 | 
-**template_type** | **str** | 模板类型 | 
+**delivery_mode** | **str** |  | 
+**description** | **str** |  | 
+**enable** | **bool** |  | 
+**market_id** | **str** |  | 
+**rainbond_version** | **str** |  | 
+**template** | **str** |  | 
+**template_type** | **str** |  | 
 **update_time** | **datetime** |  | 
-**update_version** | **int** | 更新版本 | 
-**version** | **str** | 版本 | 
-**version_alias** | **str** | 版本别名 | 
+**update_version** | **int** |  | 
+**version** | **str** |  | 
+**version_alias** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

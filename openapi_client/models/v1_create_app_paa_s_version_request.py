@@ -36,7 +36,7 @@ class V1CreateAppPaaSVersionRequest(object):
     openapi_types = {
         'description': 'str',
         'rainbond_version': 'str',
-        'template': 'V1alpha1RainbondApplicationConfig',
+        'template': 'V1StoreAppVersionTemplate',
         'template_type': 'str',
         'version': 'str',
         'version_alias': 'str'
@@ -88,7 +88,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param description: The description of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: str
+        :type description: str
         """
         if self.local_vars_configuration.client_side_validation and description is None:  # noqa: E501
             raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param rainbond_version: The rainbond_version of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: str
+        :type rainbond_version: str
         """
         if self.local_vars_configuration.client_side_validation and rainbond_version is None:  # noqa: E501
             raise ValueError("Invalid value for `rainbond_version`, must not be `None`")  # noqa: E501
@@ -124,7 +124,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :return: The template of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :rtype: V1alpha1RainbondApplicationConfig
+        :rtype: V1StoreAppVersionTemplate
         """
         return self._template
 
@@ -134,7 +134,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param template: The template of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: V1alpha1RainbondApplicationConfig
+        :type template: V1StoreAppVersionTemplate
         """
         if self.local_vars_configuration.client_side_validation and template is None:  # noqa: E501
             raise ValueError("Invalid value for `template`, must not be `None`")  # noqa: E501
@@ -157,7 +157,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param template_type: The template_type of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: str
+        :type template_type: str
         """
         if self.local_vars_configuration.client_side_validation and template_type is None:  # noqa: E501
             raise ValueError("Invalid value for `template_type`, must not be `None`")  # noqa: E501
@@ -180,7 +180,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param version: The version of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: str
+        :type version: str
         """
         if self.local_vars_configuration.client_side_validation and version is None:  # noqa: E501
             raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
@@ -203,7 +203,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
 
         :param version_alias: The version_alias of this V1CreateAppPaaSVersionRequest.  # noqa: E501
-        :type: str
+        :type version_alias: str
         """
         if self.local_vars_configuration.client_side_validation and version_alias is None:  # noqa: E501
             raise ValueError("Invalid value for `version_alias`, must not be `None`")  # noqa: E501

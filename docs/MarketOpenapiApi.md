@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**create_app_version**](MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | 创建应用版本
 [**get_app_hub_info**](MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | 获取镜像仓库信息
 [**get_market_info**](MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
+[**get_orgs**](MarketOpenapiApi.md#get_orgs) | **GET** /app-server/openapi/organizations | 获取组织机构(行业)列表
 [**get_user_app_detail**](MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情
 [**get_user_app_list**](MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | 应用列表
 [**get_user_app_version_detail**](MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | 应用版本信息
@@ -405,6 +406,77 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **403** | No perm |  -  |
 **500** | server failure |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_orgs**
+> list[V1Organization] get_orgs()
+
+获取组织机构(行业)列表
+
+### Example
+
+* Api Key Authentication (api_key):
+```python
+from __future__ import print_function
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://127.0.0.1:8080
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'Authorization': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with openapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = openapi_client.MarketOpenapiApi(api_client)
+    
+    try:
+        # 获取组织机构(行业)列表
+        api_response = api_instance.get_orgs()
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling MarketOpenapiApi->get_orgs: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**list[V1Organization]**](V1Organization.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

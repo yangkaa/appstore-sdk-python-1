@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
 *MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | 创建应用版本
 *MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | 获取镜像仓库信息
 *MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
+*MarketOpenapiApi* | [**get_orgs**](docs/MarketOpenapiApi.md#get_orgs) | **GET** /app-server/openapi/organizations | 获取组织机构(行业)列表
 *MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情
 *MarketOpenapiApi* | [**get_user_app_list**](docs/MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | 应用列表
 *MarketOpenapiApi* | [**get_user_app_version_detail**](docs/MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | 应用版本信息
@@ -124,6 +125,7 @@ Class | Method | HTTP request | Description
  - [V1CreateAppPaaSVersionRequest](docs/V1CreateAppPaaSVersionRequest.md)
  - [V1MarketInfoResponse](docs/V1MarketInfoResponse.md)
  - [V1MarketUIAppTagsResponse](docs/V1MarketUIAppTagsResponse.md)
+ - [V1Organization](docs/V1Organization.md)
  - [V1UserAppListResponse](docs/V1UserAppListResponse.md)
  - [V1alpha1AppConfigGroup](docs/V1alpha1AppConfigGroup.md)
  - [V1alpha1Component](docs/V1alpha1Component.md)

@@ -29,6 +29,7 @@ from openapi_client.models.v1_bindable_market import V1BindableMarket
 from openapi_client.models.v1_create_app_paa_s_version_request import V1CreateAppPaaSVersionRequest
 from openapi_client.models.v1_market_info_response import V1MarketInfoResponse
 from openapi_client.models.v1_market_ui_app_tags_response import V1MarketUIAppTagsResponse
+from openapi_client.models.v1_organization import V1Organization
 from openapi_client.models.v1_user_app_list_response import V1UserAppListResponse
 from openapi_client.models.v1alpha1_app_config_group import V1alpha1AppConfigGroup
 from openapi_client.models.v1alpha1_component import V1alpha1Component
